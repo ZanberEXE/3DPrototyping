@@ -1,0 +1,64 @@
+﻿body 
+{
+
+}
+
+#navbar
+{
+    line-height: 60px;
+    background-color: cadetblue;
+}
+
+#logo
+{
+    line-height: 60px;
+}
+
+#block1
+{
+    margin-top: -22px;
+    margin-bottom: -22px;
+   background-color: bisque;
+}
+
+li
+{
+    text-align: center;
+    list-style: none;
+    font-size: 30px;
+    line-height: 60px;
+    text-shadow: 4px 4px 8px #808080;
+}
+
+li > a 
+{
+    text-decoration: none;
+    color: #ff1a1a;
+}
+
+li > a:hover 
+{
+    color: #f09b27;
+}
+
+li > a:active 
+{
+    color: #930202;
+}
+
+footer 
+{
+    padding-left: 10px;
+    background-color: cadetblue;
+    line-height: 60px;
+}
+
+h1 
+{
+    padding-left: 10px;
+}
+
+h2 
+{
+    padding-left: 10px;
+}
