@@ -341,6 +341,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 0a92bc3e3def08a4aa552ba2bfaf91ac,
     type: 3}
   m_PrefabInternal: {fileID: 356308836}
+--- !u!1 &356308838 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 0a92bc3e3def08a4aa552ba2bfaf91ac,
+    type: 3}
+  m_PrefabInternal: {fileID: 356308836}
+--- !u!64 &356308839
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 356308838}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 0a92bc3e3def08a4aa552ba2bfaf91ac, type: 3}
 --- !u!1001 &430682078
 Prefab:
   m_ObjectHideFlags: 0
@@ -396,6 +415,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 0a92bc3e3def08a4aa552ba2bfaf91ac,
     type: 3}
   m_PrefabInternal: {fileID: 430682078}
+--- !u!1 &430682080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 0a92bc3e3def08a4aa552ba2bfaf91ac,
+    type: 3}
+  m_PrefabInternal: {fileID: 430682078}
+--- !u!64 &430682081
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 430682080}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 0a92bc3e3def08a4aa552ba2bfaf91ac, type: 3}
 --- !u!1 &966605029
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,6 +519,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b96664e181e7c554498ba9382d6fa0d5,
     type: 3}
   m_PrefabInternal: {fileID: 1100104723}
+--- !u!1 &1100104725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: b96664e181e7c554498ba9382d6fa0d5,
+    type: 3}
+  m_PrefabInternal: {fileID: 1100104723}
+--- !u!64 &1100104726
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1100104725}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: b96664e181e7c554498ba9382d6fa0d5, type: 3}
 --- !u!1001 &1207376151
 Prefab:
   m_ObjectHideFlags: 0
@@ -548,6 +605,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: e381a6422dfe794458c1b17087f73568,
     type: 3}
   m_PrefabInternal: {fileID: 1207376151}
+--- !u!1 &1207376153 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: e381a6422dfe794458c1b17087f73568,
+    type: 3}
+  m_PrefabInternal: {fileID: 1207376151}
+--- !u!64 &1207376154
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1207376153}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: e381a6422dfe794458c1b17087f73568, type: 3}
 --- !u!1 &1794923381
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,6 +710,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: e381a6422dfe794458c1b17087f73568,
     type: 3}
   m_PrefabInternal: {fileID: 1826363631}
+--- !u!1 &1826363633 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: e381a6422dfe794458c1b17087f73568,
+    type: 3}
+  m_PrefabInternal: {fileID: 1826363631}
+--- !u!64 &1826363634
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1826363633}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: e381a6422dfe794458c1b17087f73568, type: 3}
 --- !u!1 &2097980759
 GameObject:
   m_ObjectHideFlags: 0
