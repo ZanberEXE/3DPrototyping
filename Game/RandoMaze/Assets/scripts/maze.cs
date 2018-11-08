@@ -9,7 +9,10 @@ public class maze : MonoBehaviour {
     //14 geraden
     //6 3 ecken mit schatz
     //List for found movable Walls
-    private List<GameObject> list;
+    public List<GameObject> list;
+    public List<Vector3> targetWalls;
+    public Vector3 moveto;
+    GameObject usable;
     //Position Array for movable Walls
     public int[,] positionArr = new int[,] {  
         { 0, 1, 0, 1, 0, 1, 0 },
@@ -28,13 +31,15 @@ public class maze : MonoBehaviour {
     //How much to move left
     private Vector3 movement;
     private Vector2 nextPos;
+    private int moveValue;
 
     #region Testvalues
     public bool rotate = false;
     public bool startMove = false;
-    public bool moveBlocks = false;
+    public bool moveToB = false;
+    public bool moveBlocks = true;
     public string orientation = "y";
-    public string plusOrMinus = "-";
+    public string plusOrMinus = "+";
     public int number = 1;
     #endregion
     
@@ -48,6 +53,7 @@ public class maze : MonoBehaviour {
         rotate = false;
     }
 
+    //Position InputWall for pushing the Row/Col
     private void addWall()
     {
         list.Add(GameObject.FindGameObjectWithTag("InputWall"));
@@ -70,13 +76,101 @@ public class maze : MonoBehaviour {
         }
         else if (plusOrMinus == "-")
         {
-            list[0].transform.position = new Vector3(-posSteps * 2 * nextPos.x*value.x, 0f, -posSteps * 2 * nextPos.y + value.y*value.x);
+            list[0].transform.position = new Vector3(-posSteps * 2 * nextPos.x * value.x, 0f, -posSteps * 2 * nextPos.y + value.y * value.x);
         }
+    }
+
+    //Push Row/Col and make new InputWall
+    private void moveTo()
+    {
+        int zRows = 0;
+        switch (number)
+        {
+            case 1:
+                zRows = 1*2*posSteps;
+                break;
+            case 2:
+                zRows = 0;
+                break;
+            case 3:
+                zRows = -1*2*posSteps;
+                break;
+            default:
+                break;
+        }
+        if (orientation == "x")
+        {
+            foreach (GameObject gameObject in GameObject.FindGameObjectsWithTag("Wall"))
+            {
+                if (gameObject.transform.position.z == zRows)
+                {
+                    list.Add(gameObject);
+                    //targetWalls.Add(new Vector3());
+                }
+            }
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (plusOrMinus == "+")
+                {
+                    moveValue = 1;
+                }
+                else if(plusOrMinus=="-")
+                {
+                    moveValue = -1;
+                }
+                moveto = list[i].transform.position + posSteps * new Vector3(moveValue, 0, 0);
+                list[i].transform.position = moveto;
+            }
+            list.Find(x => x.tag.Equals("InputWall")).tag = "Wall";
+            if (plusOrMinus == "+")
+            {
+                list.Find(x => x.transform.position.x > 9).tag = "InputWall";
+            }else if (plusOrMinus == "-")
+            {
+                list.Find(x => x.transform.position.x < -9).tag = "InputWall";
+            }
+        }
+        else if(orientation=="y")
+        {
+            foreach (GameObject gameObject in GameObject.FindGameObjectsWithTag("Wall"))
+            {
+                if (gameObject.transform.position.x == zRows*-1)
+                {
+                    list.Add(gameObject);
+                    //targetWalls.Add(new Vector3());
+                }
+            }
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (plusOrMinus == "+")
+                {
+                    moveValue = -1;
+                }
+                else if (plusOrMinus == "-")
+                {
+                    moveValue = 1;
+                }
+                moveto = list[i].transform.position + posSteps * new Vector3(0, 0, moveValue);
+                list[i].transform.position = moveto;
+            }
+            list.Find(x => x.tag.Equals("InputWall")).tag = "Wall";
+            if (plusOrMinus == "+")
+            {
+                list.Find(x => x.transform.position.z < -9).tag = "InputWall";
+            }
+            else if (plusOrMinus == "-")
+            {
+                list.Find(x => x.transform.position.z > 9).tag = "InputWall";
+            }
+        }
+        //empty list
+        list.Clear();
+        //add disable Button
     }
 
     private void move(List<GameObject> walls)
     {
-
+        //for continous movement
     }
 
     //find next Place for Wall
@@ -130,6 +224,11 @@ public class maze : MonoBehaviour {
             addWall();
 
             startMove = false;
+        }
+        if (moveToB)
+        {
+            moveTo();
+            moveToB = false;
         }
         if (movement.x != 0 || movement.z != 0)
         {

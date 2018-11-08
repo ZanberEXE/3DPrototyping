@@ -3526,13 +3526,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 669c1cfd58acace4884c84a922d70021, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  list: []
   posSteps: 3
   startPosX: -9
   startPosZ: 9
   rotate: 0
   startMove: 0
-  orientation: x
-  plusOrMinus: +
+  moveToB: 0
+  moveBlocks: 0
+  orientation: y
+  plusOrMinus: '-'
   number: 1
 --- !u!4 &1822164674 stripped
 Transform:
