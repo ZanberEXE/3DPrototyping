@@ -52,7 +52,7 @@ public class maze : MonoBehaviour {
     {
         list.Add(GameObject.FindGameObjectWithTag("InputWall"));
         list[0].transform.position = new Vector3(0, -3f, 0);
-        Vector2 value = new Vector2(0,12);
+        Vector2 value = new Vector2(1,12);
         if (orientation=="x")
         {
             nextPos = new Vector2(-2, number);
@@ -61,7 +61,7 @@ public class maze : MonoBehaviour {
         else if(orientation=="y")
         {
             nextPos = new Vector2(number-2, 0);
-            value = new Vector2(0, -12); 
+            value = new Vector2(-1, 12);
 
         }
         if (plusOrMinus == "+")
@@ -70,7 +70,7 @@ public class maze : MonoBehaviour {
         }
         else if (plusOrMinus == "-")
         {
-            list[0].transform.position = new Vector3(posSteps * 2 * -nextPos.x, 0f, -posSteps * 2 * nextPos.y + value.y);
+            list[0].transform.position = new Vector3(-posSteps * 2 * nextPos.x*value.x, 0f, -posSteps * 2 * nextPos.y + value.y*value.x);
         }
     }
 
