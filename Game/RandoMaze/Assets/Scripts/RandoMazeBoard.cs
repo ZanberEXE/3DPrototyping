@@ -17,7 +17,7 @@ public class RandoMazeBoard : MonoBehaviour {
 
     //temp PlayerNum Solution
     const int playerIndex = 2;
-    const int removeNum = 2;
+    const int removeNum = 0;
 
     public int playerNum = 4;
 
@@ -27,7 +27,7 @@ public class RandoMazeBoard : MonoBehaviour {
         //temp Solution changing number of players
         playersGroup.RemoveRange(playerIndex, removeNum);
 
-        //GenerateBoard();
+        GenerateBoard();
 
         //Reset turns in the beginning
         ResetTurns();
