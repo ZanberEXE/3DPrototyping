@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class test2 : MonoBehaviour
+public class keyMove2 : MonoBehaviour
 {
 
     Rigidbody rbody;
     public float moveSpeed = 5f;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start()
     {
         rbody = GetComponent<Rigidbody>();
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    }
+
+    // Update is called once per frame
+    void Update()
     {
         //if (Input.GetMouseButtonDown(0))
         //{
@@ -31,5 +31,5 @@ public class test2 : MonoBehaviour
         float moveZ = inputZ * moveSpeed * Time.deltaTime;
 
         rbody.transform.Translate(moveX, 0f, moveZ);
-	}
+    }
 }
