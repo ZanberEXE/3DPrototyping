@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,10 +7,28 @@ public class RandoMazeBoard : MonoBehaviour {
 
     //List of Players
     public List<TurnClass> playersGroup;
+    public List<GameObject> playersNum;
+
+    //public PlayerPieces playerPieces = new PlayerPieces();
+    //public List<PlayerPieces> playerPieces;
+
+    //gameObjects of Players
+    public GameObject playerPiecePrefab;
+
+    //temp PlayerNum Solution
+    const int playerIndex = 2;
+    const int removeNum = 2;
+
+    public int playerNum = 4;
 
 	// Use this for initialization
 	void Start ()
     {
+        //temp Solution changing number of players
+        playersGroup.RemoveRange(playerIndex, removeNum);
+
+        //GenerateBoard();
+
         //Reset turns in the beginning
         ResetTurns();
 	}
@@ -62,6 +80,24 @@ public class RandoMazeBoard : MonoBehaviour {
             else if (i == playersGroup.Count - 1 && playersGroup[i].wasTurnPrev)
                 ResetTurns();
         }
+    }
+
+    //create pieces on board
+    private void GenerateBoard()
+    {
+        for(int i = 0; i < playerNum; i++)
+        {
+            GeneratePlayerPiece(i, 0);
+        }
+    }
+
+    private void GeneratePlayerPiece(int x, int y)
+    {
+        GameObject go = Instantiate(playerPiecePrefab) as GameObject;
+        go.transform.SetParent(transform);
+        PlayerPieces pp = go.GetComponent<PlayerPieces>();
+        playersNum.Add(go);
+        pp.transform.position = (Vector3.right * x)+ (Vector3.forward * y)+ (Vector3.up * 1.5f);      
     }
 }
 
