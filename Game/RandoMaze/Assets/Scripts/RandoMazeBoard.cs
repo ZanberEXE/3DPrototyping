@@ -27,7 +27,7 @@ public class RandoMazeBoard : MonoBehaviour {
         //temp Solution changing number of players
         playersGroup.RemoveRange(playerIndex, removeNum);
 
-        GenerateBoard();
+        //GenerateBoard();
 
         //Reset turns in the beginning
         ResetTurns();
@@ -83,13 +83,13 @@ public class RandoMazeBoard : MonoBehaviour {
     }
 
     //create pieces on board
-    private void GenerateBoard()
-    {
-        for(int i = 0; i < playerNum; i++)
-        {
-            GeneratePlayerPiece(i, 0);
-        }
-    }
+    //private void GenerateBoard()
+    //{
+    //    for(int i = 0; i < playerNum; i++)
+    //    {
+    //        GeneratePlayerPiece(i, 0);
+    //    }
+    //}
 
     private void GeneratePlayerPiece(int x, int y)
     {
