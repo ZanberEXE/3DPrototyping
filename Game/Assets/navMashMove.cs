@@ -9,6 +9,7 @@ public class navMashMove : MonoBehaviour
 
     UnityEngine.AI.NavMeshAgent agent;
     Vector3 targetPos;
+    public bool moving2 = false;
 	// Use this for initialization
 	void Start ()
     {
@@ -30,7 +31,12 @@ public class navMashMove : MonoBehaviour
             }
         }
 
-        Move();
+        if (moving2 == true)
+        {
+
+
+            Move();
+        }
 	}
 
     void Move()

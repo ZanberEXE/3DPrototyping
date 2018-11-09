@@ -7,6 +7,7 @@ public class keyMove2 : MonoBehaviour
 
     Rigidbody rbody;
     public float moveSpeed = 5f;
+    public bool moving = false;
 
     // Use this for initialization
     void Start()
@@ -24,12 +25,17 @@ public class keyMove2 : MonoBehaviour
         //}
         //transform.Translate(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, 0f, Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime);
 
-        float inputX = Input.GetAxis("Horizontal");
-        float inputZ = Input.GetAxis("Vertical");
+        if (moving == true)
+        {
 
-        float moveX = inputX * moveSpeed * Time.deltaTime;
-        float moveZ = inputZ * moveSpeed * Time.deltaTime;
 
-        rbody.transform.Translate(moveX, 0f, moveZ);
+            float inputX = Input.GetAxis("Horizontal");
+            float inputZ = Input.GetAxis("Vertical");
+
+            float moveX = inputX * moveSpeed * Time.deltaTime;
+            float moveZ = inputZ * moveSpeed * Time.deltaTime;
+
+            rbody.transform.Translate(moveX, 0f, moveZ);
+        }
     }
 }
