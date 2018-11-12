@@ -8,7 +8,7 @@ public class navMashMove : MonoBehaviour
 {
 
     UnityEngine.AI.NavMeshAgent agent;
-    public Vector3 targetPos;
+    Vector3 targetPos;
     public bool moving2 = false;
 	// Use this for initialization
 	void Start ()
@@ -29,15 +29,14 @@ public class navMashMove : MonoBehaviour
             {
                 targetPos = ray.GetPoint(point);
             }
-            if (moving2 == true)
-            {
+        }
+
+        if (moving2 == true)
+        {
 
 
             Move();
-            }
         }
-
-        
 	}
 
     void Move()
