@@ -51,7 +51,6 @@ public class PlayerPieces: MonoBehaviour
                 endPlayerTurn.buttonPressed = false;    //change EndTurn Button was pressed to false again
 
                 move.moving = false;
-                NVM.moving2 = false;
             }
         }
     }
