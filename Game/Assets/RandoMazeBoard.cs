@@ -97,7 +97,7 @@ public class RandoMazeBoard : MonoBehaviour {
         go.transform.SetParent(transform);
         PlayerPieces pp = go.GetComponent<PlayerPieces>();
         playersNum.Add(go);
-        pp.transform.position = (Vector3.right * x)+ (Vector3.forward * y)+ (Vector3.up * 1.5f);      
+        // pp.transform.position = (Vector3.right * x)+ (Vector3.forward * y)+ (Vector3.up * 1.5f);      
     }
 }
 
