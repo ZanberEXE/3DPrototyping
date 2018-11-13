@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class maze : MonoBehaviour {
 
@@ -208,7 +209,7 @@ public class maze : MonoBehaviour {
             list[removePos].transform.rotation = Quaternion.AngleAxis(Random.Range(1, 4) * 90, Vector3.up);
             list.RemoveAt(removePos);
             nextPos = Vector3.zero;
-
+            
         }
 
     }
