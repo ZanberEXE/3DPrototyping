@@ -12,6 +12,7 @@ public class maze : MonoBehaviour {
     //List for found movable Walls
     public List<GameObject> list;
     public List<Vector3> targetWalls;
+    public List<NavMeshSurface> surfaces;
     public Vector3 moveto;
     GameObject usable;
     //Position Array for movable Walls
@@ -33,7 +34,7 @@ public class maze : MonoBehaviour {
     private Vector3 movement;
     private Vector2 nextPos;
     private int moveValue;
-
+    
     #region Testvalues
     public bool rotate = false;
     public bool startMove = false;
@@ -211,7 +212,10 @@ public class maze : MonoBehaviour {
             nextPos = Vector3.zero;
             
         }
-
+        for (int i = 0; i < surfaces.Count; i++)
+        {
+            surfaces[i].BuildNavMesh();
+        }
     }
 	
 	// Update is called once per frame
@@ -230,6 +234,10 @@ public class maze : MonoBehaviour {
         {
             moveTo();
             moveToB = false;
+            for (int i = 0; i < surfaces.Count; i++)
+            {
+                surfaces[i].BuildNavMesh();
+            }
         }
         if (movement.x != 0 || movement.z != 0)
         {
