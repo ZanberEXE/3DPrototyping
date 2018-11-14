@@ -8,12 +8,13 @@ public class CollectTreasures : MonoBehaviour
     int playerTreasureID;
     int treasureID = 1;
     string trausureName;
+
     
 	// Use this for initialization
 	void Start ()
     {
         playerTreasureID = 1;
-        treasure = GetComponent<treasureSetting>();
+        treasure = new treasureSetting();
 	}
 	
 	// Update is called once per frame
@@ -24,7 +25,7 @@ public class CollectTreasures : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //treasure.CheckID(treasureID);
+        treasure.CheckID(treasureID);
         trausureName = "Treasure" + treasureID;
         if (other.gameObject.name == trausureName)
         {
