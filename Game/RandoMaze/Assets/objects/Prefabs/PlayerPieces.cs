@@ -15,7 +15,7 @@ public class PlayerPieces: MonoBehaviour
 
     private void Start()
     {
-        boardTurnSystem = GameObject.Find("Plane").GetComponent<RandoMazeBoard>();
+        boardTurnSystem = GameObject.Find("Maze").GetComponent<RandoMazeBoard>();
         move = GetComponent<keyMove2>();
         NVM = GetComponent<navMashMove>();
 
