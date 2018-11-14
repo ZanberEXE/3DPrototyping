@@ -11,7 +11,7 @@ public class maze : MonoBehaviour {
     //6 3 ecken mit schatz
     //List for found movable Walls
     public List<GameObject> list;
-    public List<Vector3> targetWalls;
+    //public List<Vector3> targetWalls;
     public List<NavMeshSurface> surfaces;
     public Vector3 moveto;
     GameObject usable;
@@ -25,21 +25,24 @@ public class maze : MonoBehaviour {
         { 1, 1, 1, 1, 1, 1, 1 },
         { 0, 1, 0, 1, 0, 1, 0 } };
     //Size of Walls
-    public int posSteps = 3;
+    private int posSteps = 3;
     //Start Position
-    public int startPosX = -9;
-    public int startPosZ = 9;
+    private int startPosX = -9;
+    private int startPosZ = 9;
     private int removePos;
     //How much to move left
     private Vector3 movement;
     private Vector2 nextPos;
     private int moveValue;
-    
+
     #region Testvalues
+    //can be rotated, moved
+    public bool finished = false;
+    //rotate if true
     public bool rotate = false;
+    //move inputblock and insert
     public bool startMove = false;
-    public bool moveToB = false;
-    public bool moveBlocks = true;
+    //public bool moveBlocks = true;
     public string orientation = "y";
     public string plusOrMinus = "+";
     public int number = 1;
@@ -220,23 +223,22 @@ public class maze : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (rotate)
+        if (!finished)
         {
-            rotateInputWall();
-        }
-        if (startMove)
-        {
-            addWall();
-
-            startMove = false;
-        }
-        if (moveToB)
-        {
-            moveTo();
-            moveToB = false;
-            for (int i = 0; i < surfaces.Count; i++)
+            if (rotate)
             {
-                surfaces[i].BuildNavMesh();
+                rotateInputWall();
+            }
+            if (startMove)
+            {
+                addWall();
+                moveTo();
+                for (int i = 0; i < surfaces.Count; i++)
+                {
+                    surfaces[i].BuildNavMesh();
+                }
+                finished = true;
+                startMove = false;
             }
         }
         if (movement.x != 0 || movement.z != 0)

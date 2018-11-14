@@ -5858,17 +5858,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   list: []
-  targetWalls: []
   surfaces:
   - {fileID: 1591004812}
   moveto: {x: 0, y: 0, z: 0}
-  posSteps: 3
-  startPosX: -9
-  startPosZ: 9
+  finished: 0
   rotate: 0
   startMove: 0
-  moveToB: 0
-  moveBlocks: 0
   orientation: x
   plusOrMinus: +
   number: 1

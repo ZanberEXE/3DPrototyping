@@ -9,6 +9,10 @@ public class PlayerPieces: MonoBehaviour
     public RandoMazeBoard boardTurnSystem;
     public TurnClass turnClass;
     public EndTurn endPlayerTurn;
+
+    //wallmovement system
+    public maze maze;
+    public bool finishedwall=false;
     keyMove2 move;
     navMashMove NVM;
     public bool isTurn = false;     //bool to check if itz the Player's turn
@@ -16,13 +20,14 @@ public class PlayerPieces: MonoBehaviour
     private void Start()
     {
         boardTurnSystem = GameObject.Find("Maze").GetComponent<RandoMazeBoard>();
+        maze = GameObject.Find("Maze").GetComponent<maze>();
         move = GetComponent<keyMove2>();
         NVM = GetComponent<navMashMove>();
 
-        //for each gameObject of Turnclass in the List of "Board"
+        //for each gameObject of Turnclass in the List of "Maze"
         foreach (TurnClass element in boardTurnSystem.playersGroup)
         {
-            //if the gameObject Name matches the gameObject name in "Board" /check if gameObject is registered in "Board"
+            //if the gameObject Name matches the gameObject name in "Maze" /check if gameObject is registered in "Maze"
             //add reference of element instance into turnclass
             if (element.playerGameObject.name == gameObject.name)
                 turnClass = element;
@@ -34,25 +39,32 @@ public class PlayerPieces: MonoBehaviour
     {
         //set value of isTurn equal to value that current Player holds
         isTurn = turnClass.isTurn;
-
-        //if isTurn = true
-        if(isTurn)
+        finishedwall = maze.finished;
+        //if walls moved
+        if (finishedwall)
         {
-            move.moving = true;
-            NVM.moving2 = true;
-
-            //check if Button was pressed
-            if (endPlayerTurn.buttonPressed == true)
+            //if isTurn = true
+            if(isTurn)
             {
-                isTurn = false;     //set isTurn false again
-                turnClass.isTurn = isTurn;      //turnClass.isTurn = false
-                turnClass.wasTurnPrev = true;   //set the Players wasTurnPrev to true
+                move.moving = true;
+                NVM.moving2 = true;
 
-                endPlayerTurn.buttonPressed = false;    //change EndTurn Button was pressed to false again
+                //check if Button was pressed
+                if (endPlayerTurn.buttonPressed == true)
+                {
+                    isTurn = false;     //set isTurn false again
+                    turnClass.isTurn = isTurn;      //turnClass.isTurn = false
+                    turnClass.wasTurnPrev = true;   //set the Players wasTurnPrev to true
 
-                move.moving = false;
-                NVM.moving2 = false;
+                    endPlayerTurn.buttonPressed = false;    //change EndTurn Button was pressed to false again
+
+                    move.moving = false;
+                    NVM.moving2 = false;
+                    finishedwall = false;
+                    maze.finished = false;
+                }
             }
         }
+        
     }
 }
