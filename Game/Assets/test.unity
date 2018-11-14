@@ -322,6 +322,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1632438838434154, guid: 52e1f34c88fbe0240b6c2a8ae704c444, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 114933523639728320, guid: 52e1f34c88fbe0240b6c2a8ae704c444,
+        type: 2}
+      propertyPath: ID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632438838434154, guid: 52e1f34c88fbe0240b6c2a8ae704c444, type: 2}
+      propertyPath: m_Name
+      value: Treasure1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52e1f34c88fbe0240b6c2a8ae704c444, type: 2}
   m_IsPrefabAsset: 0

@@ -20,7 +20,7 @@ public class navMashMove : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        MouseDetect();
+        //MouseDetect();
         //MouseClickCheck();
         if (outOfPlane == true)
         {
