@@ -2427,6 +2427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6c17f1d8cb7eb545a0fd9a43a27f604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endPlayerTurn: {fileID: 1617862155}
 --- !u!1 &474506651 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1119197113053090, guid: fa58ce0d1c3d8d14ea21303a4fc7f431,
@@ -2443,6 +2444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6c17f1d8cb7eb545a0fd9a43a27f604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endPlayerTurn: {fileID: 1617862155}
 --- !u!1 &478330786 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: bfae6d1dc70b80348a8fb4f4f8b41665,
@@ -6634,6 +6636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6c17f1d8cb7eb545a0fd9a43a27f604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endPlayerTurn: {fileID: 1617862155}
 --- !u!1001 &1376259571
 Prefab:
   m_ObjectHideFlags: 0
@@ -8403,6 +8406,9 @@ MonoBehaviour:
   surfaces:
   - {fileID: 1591004812}
   moveto: {x: 0, y: 0, z: 0}
+  pattern: 0
+  porientation: y
+  pnumber: 1
   finished: 0
   rotate: 0
   startMove: 0
@@ -8854,6 +8860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6c17f1d8cb7eb545a0fd9a43a27f604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endPlayerTurn: {fileID: 1617862155}
 --- !u!1 &1903351306 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: ca8a4bd68129a3548aa6a2eed550551c,
