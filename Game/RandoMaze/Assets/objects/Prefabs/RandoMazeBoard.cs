@@ -9,6 +9,10 @@ public class RandoMazeBoard : MonoBehaviour {
     public List<TurnClass> playersGroup;
     public List<GameObject> playersNum;
 
+    public bool giveCards = false;
+    public List<GameObject> treasure;
+    private int randomRemove;
+    private int nmbCards;
     //public PlayerPieces playerPieces = new PlayerPieces();
     //public List<PlayerPieces> playerPieces;
 
@@ -37,7 +41,26 @@ public class RandoMazeBoard : MonoBehaviour {
 	void Update ()
     {
         UpdateTurns();
-	}
+        if (giveCards)
+        {
+            treasure = new List<GameObject>();
+            foreach (GameObject treasures in GameObject.FindGameObjectsWithTag("treasure"))
+            {
+                treasure.Add(treasures);
+            }
+            //treasurecount has to be x*4
+            while (treasure.Count > 0)
+            {
+                for (int p = 0; p < playerNum; p++)
+                {
+                    randomRemove = UnityEngine.Random.Range(0, treasure.Count - 1);
+                    playersGroup[p].playerGameObject.GetComponent<PlayerPieces>().treasures.Add(treasure[randomRemove]);
+                    treasure.RemoveAt(randomRemove);
+                }
+            }
+            giveCards = false;
+        }
+    }
 
     //reset turn to Beginning
         //Player1 starts
@@ -75,6 +98,7 @@ public class RandoMazeBoard : MonoBehaviour {
                 playersGroup[i].isTurn = true;
                 break;
             }
+            
                 //if iteration = amount of players And the last Player had his turn
                     //reset the turns -> new round
             else if (i == playersGroup.Count - 1 && playersGroup[i].wasTurnPrev)

@@ -12,6 +12,7 @@ public class maze : MonoBehaviour {
     //List for found movable Walls
     public List<GameObject> list;
     //public List<Vector3> targetWalls;
+    
     public List<NavMeshSurface> surfaces;
     public Vector3 moveto;
     GameObject usable;
@@ -223,6 +224,7 @@ public class maze : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        
         if (!finished)
         {
             if (rotate)

@@ -12,7 +12,12 @@ public class PlayerPieces: MonoBehaviour
 
     //wallmovement system
     public maze maze;
-    public bool finishedwall=false;
+    public bool finishedwall = false;
+
+    //treasure
+    public int playernmb = 0;
+    public List<GameObject> treasures;
+
     keyMove2 move;
     navMashMove NVM;
     public bool isTurn = false;     //bool to check if itz the Player's turn
@@ -40,6 +45,12 @@ public class PlayerPieces: MonoBehaviour
         //set value of isTurn equal to value that current Player holds
         isTurn = turnClass.isTurn;
         finishedwall = maze.finished;
+
+        if (maze.GetComponent<RandoMazeBoard>().playerNum != playernmb)
+        {
+            playernmb = maze.GetComponent<RandoMazeBoard>().playerNum;
+        }
+
         //if walls moved
         if (finishedwall)
         {
