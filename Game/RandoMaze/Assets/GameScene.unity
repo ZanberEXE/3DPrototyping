@@ -2539,7 +2539,7 @@ GameObject:
   - component: {fileID: 503979650}
   m_Layer: 0
   m_Name: yellowGoal
-  m_TagString: Untagged
+  m_TagString: goal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3479,7 +3479,7 @@ GameObject:
   - component: {fileID: 688495737}
   m_Layer: 0
   m_Name: blueGoal
-  m_TagString: Untagged
+  m_TagString: goal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9178,7 +9178,7 @@ GameObject:
   - component: {fileID: 1911675440}
   m_Layer: 0
   m_Name: redGoal
-  m_TagString: Untagged
+  m_TagString: goal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10028,7 +10028,7 @@ GameObject:
   - component: {fileID: 2143955387}
   m_Layer: 0
   m_Name: greenGoal
-  m_TagString: Untagged
+  m_TagString: goal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

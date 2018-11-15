@@ -8,6 +8,7 @@ TagManager:
   - FixedWall
   - InputWall
   - treasure
+  - goal
   layers:
   - Default
   - TransparentFX

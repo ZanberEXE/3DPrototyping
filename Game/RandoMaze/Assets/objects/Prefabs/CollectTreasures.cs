@@ -22,18 +22,22 @@ public class CollectTreasures : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //treasure.CheckID(treasureID);
-        trausureName = GetComponentInParent<PlayerPieces>().treasures[0];
 
-        if (other.gameObject == trausureName)
+        if (other.tag != "goal")
         {
-            //treasure.CheckID(treasureID);
-            //if (treasureID == playerTreasureID)
-            //{
-            //    other.gameObject.SetActive(false);
-            //}
+            trausureName = GetComponentInParent<PlayerPieces>().treasures[0];
 
-            other.gameObject.SetActive(false);
-            Debug.Log(trausureName);
+            if (other.gameObject == trausureName)
+            {
+                //treasure.CheckID(treasureID);
+                //if (treasureID == playerTreasureID)
+                //{
+                //    other.gameObject.SetActive(false);
+                //}
+
+                other.gameObject.SetActive(false);
+                Debug.Log(trausureName);
+            }
         }
     }
 }
