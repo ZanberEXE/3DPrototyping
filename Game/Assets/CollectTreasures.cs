@@ -25,8 +25,9 @@ public class CollectTreasures : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        treasure.CheckID(treasureID);
-        trausureName = "Treasure" + treasureID;
+        //treasure.CheckID(treasureID);
+        trausureName = "treasure" + treasureID;
+
         if (other.gameObject.name == trausureName)
         {
             //treasure.CheckID(treasureID);

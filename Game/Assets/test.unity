@@ -333,7 +333,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1632438838434154, guid: 52e1f34c88fbe0240b6c2a8ae704c444, type: 2}
       propertyPath: m_Name
-      value: Treasure1
+      value: treasure1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52e1f34c88fbe0240b6c2a8ae704c444, type: 2}
