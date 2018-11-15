@@ -83,14 +83,16 @@ public class MoveWall : MonoBehaviour {
 
         }
 
-        
-       
 
-        maze.FindObjectOfType<maze>().startMove = true;
-        if(maze.FindObjectOfType<maze>().startMove == true)
+
+        if (!maze.FindObjectOfType<maze>().finished)
         {
-            maze.FindObjectOfType<maze>().finished = false;
+            maze.FindObjectOfType<maze>().startMove = true;
         }
+        //if(maze.FindObjectOfType<maze>().startMove == true)
+        //{
+        //    maze.FindObjectOfType<maze>().finished = false;
+        //}
     }
 
 
