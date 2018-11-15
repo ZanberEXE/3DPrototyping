@@ -240,8 +240,8 @@ public class maze : MonoBehaviour {
     //continuous movement
     private void move(List<GameObject> walls)
     {
-        moveleft -= movement * speed * Time.deltaTime;
-        range = Vector3.Distance(new Vector3(0, 0, 0), moveleft);
+        
+        range = Vector3.Distance(new Vector3(0, 0, 0), moveleft -= movement * speed * Time.deltaTime);
         moveto = movement * speed * Time.deltaTime;
 
         if (range>Vector3.Distance(new Vector3(0,0,0),moveto)) {
@@ -254,7 +254,7 @@ public class maze : MonoBehaviour {
         {
             for(int i = 0; i < walls.Count; i++)
             {
-                walls[i].transform.position += moveleft;
+                walls[i].transform.position += (moveleft -= movement * speed * Time.deltaTime);
                 moveleft = Vector3.zero;
             }
             finishMove(walls);
