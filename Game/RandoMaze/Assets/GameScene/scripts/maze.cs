@@ -60,7 +60,7 @@ public class maze : MonoBehaviour {
     }
 
     //Position InputWall for pushing the Row/Col
-    private void addWall()
+    public void addWall()
     {
         list.Add(GameObject.FindGameObjectWithTag("InputWall"));
         list[0].transform.position = new Vector3(0, -3f, 0);
@@ -87,7 +87,7 @@ public class maze : MonoBehaviour {
     }
 
     //Push Row/Col and make new InputWall
-    private void moveTo()
+    public void moveTo()
     {
         int zRows = 0;
         switch (number)
