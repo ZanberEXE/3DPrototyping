@@ -17,11 +17,20 @@ public class PlayerPieces: MonoBehaviour
     //treasure
     public int playernmb = 0;
     public List<GameObject> treasures;
+    public GameObject goal;
+    public bool hasTreasures = false;
 
     keyMove2 move;
     navMashMove NVM;
     public bool isTurn = false;     //bool to check if itz the Player's turn
 
+    private void checkGoal()
+    {
+        if (treasures.Count == 0)
+        {
+            treasures.Add(goal);
+        }
+    }
     private void Start()
     {
         boardTurnSystem = GameObject.Find("Maze").GetComponent<RandoMazeBoard>();
@@ -50,7 +59,10 @@ public class PlayerPieces: MonoBehaviour
         {
             playernmb = maze.GetComponent<RandoMazeBoard>().playerNum;
         }
-
+        if (hasTreasures)
+        {
+            checkGoal();
+        }
         //if walls moved
         if (finishedwall)
         {
