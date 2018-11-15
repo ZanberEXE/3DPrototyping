@@ -22,9 +22,9 @@ public class RandoMazeBoard : MonoBehaviour {
     //temp PlayerNum Solution
     const int playerIndex = 2;
     const int removeNum = 0;
-
+    
     public int playerNum = 4;
-
+    
 	// Use this for initialization
 	void Start ()
     {
@@ -80,6 +80,7 @@ public class RandoMazeBoard : MonoBehaviour {
                 playersGroup[i].wasTurnPrev = false;
             }
         }
+        GetComponentInParent<maze>().pattern = true;
     }
 
     //will be called in Update()

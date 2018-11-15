@@ -19,7 +19,7 @@ public class navMashMove : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0)&&moving2)
         {
             Plane plane = new Plane(Vector3.up, transform.position);
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -29,12 +29,10 @@ public class navMashMove : MonoBehaviour
             {
                 targetPos = ray.GetPoint(point);
             }
-            if (moving2 == true)
-            {
-
-
             Move();
-            }
+        }else if (!moving2)
+        {
+            agent.SetDestination(GetComponentInParent<Transform>().position);
         }
 
         

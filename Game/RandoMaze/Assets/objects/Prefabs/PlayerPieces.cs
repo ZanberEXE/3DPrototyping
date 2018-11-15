@@ -75,6 +75,8 @@ public class PlayerPieces: MonoBehaviour
                 //check if Button was pressed
                 if (endPlayerTurn.buttonPressed == true)
                 {
+                    move.moving = false;
+                    NVM.moving2 = false;
                     isTurn = false;     //set isTurn false again
                     turnClass.isTurn = isTurn;      //turnClass.isTurn = false
                     turnClass.wasTurnPrev = true;   //set the Players wasTurnPrev to true

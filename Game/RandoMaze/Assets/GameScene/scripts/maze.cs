@@ -37,6 +37,11 @@ public class maze : MonoBehaviour {
     private int moveValue;
 
     #region Testvalues
+    //pattern parameters
+    public bool pattern = false;
+    public string porientation = "y";
+    public int pnumber = 1;
+
     //can be rotated, moved
     public bool finished = false;
     //rotate if true
@@ -49,7 +54,66 @@ public class maze : MonoBehaviour {
     public int number = 1;
     #endregion
     
-    //private GameObject currentgameObject;
+    private void rotatePattern()
+    {
+        int zRows = 0;
+        switch (pnumber)
+        {
+            case 1:
+                zRows = 1 * 2 * posSteps;
+                break;
+            case 2:
+                zRows = 0;
+                break;
+            case 3:
+                zRows = -1 * 2 * posSteps;
+                break;
+            default:
+                break;
+        }
+        if (porientation == "x")
+        {
+            foreach (GameObject gameObject in GameObject.FindGameObjectsWithTag("Wall"))
+            {
+                if (gameObject.transform.position.z == zRows)
+                {
+                    gameObject.transform.rotation *= Quaternion.Euler(0, 90, 0);
+                }
+            }
+        }
+        else if (porientation == "y")
+        {
+            foreach (GameObject gameObject in GameObject.FindGameObjectsWithTag("Wall"))
+            {
+                if (gameObject.transform.position.x == zRows * -1)
+                {
+                    gameObject.transform.rotation *= Quaternion.Euler(0, 90, 0);
+                }
+            }
+        }
+        changePattern();
+    }
+
+    private void changePattern()
+    {
+        switch (pnumber)
+        {
+            case 3:
+                if (porientation == "y")
+                {
+                    porientation = "x";
+                }
+                else if (porientation=="x")
+                {
+                    porientation = "y";
+                }
+                pnumber = 1;
+                break;
+            default:
+                pnumber++;
+                break;
+        }
+    }
 
     private void rotateInputWall()
     {
@@ -224,7 +288,12 @@ public class maze : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        
+
+        if (pattern)
+        {
+            rotatePattern();
+            pattern = false;
+        }
         if (!finished)
         {
             if (rotate)
