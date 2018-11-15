@@ -140,6 +140,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 927000655}
+  - {fileID: 726579616}
   m_Father: {fileID: 1946467683}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -222,6 +223,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1015666678}
+  - {fileID: 230726342}
   m_Father: {fileID: 1946467683}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -251,7 +253,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1595682651}
-  - {fileID: 1137831236}
+  - {fileID: 1205615260}
   m_Father: {fileID: 2097980760}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -403,6 +405,131 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca8a4bd68129a3548aa6a2eed550551c, type: 3}
   m_IsPrefabAsset: 0
+--- !u!4 &81413549 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 226517654}
+--- !u!1 &84381515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 84381516}
+  - component: {fileID: 84381518}
+  - component: {fileID: 84381517}
+  m_Layer: 5
+  m_Name: treasure12Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &84381516
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 84381515}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &84381517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 84381515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &84381518
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 84381515}
+  m_CullTransparentMesh: 0
+--- !u!1001 &91631272
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 667189093}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure18
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 1421303354}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &95923696
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,9 +556,15 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 385677477}
+  - {fileID: 533891064}
   m_Father: {fileID: 1946467683}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &104959041 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 984346528}
 --- !u!1001 &111236433
 Prefab:
   m_ObjectHideFlags: 0
@@ -489,6 +622,57 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfae6d1dc70b80348a8fb4f4f8b41665, type: 3}
+  m_IsPrefabAsset: 0
+--- !u!1001 &122049722
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 26892129}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 1516847422}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &128299840 stripped
 GameObject:
@@ -566,6 +750,57 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8b246b844fb41548a8a2466b5920cee, type: 3}
+  m_IsPrefabAsset: 0
+--- !u!1001 &145271166
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1660039290}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 214530519}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &149713973
 Prefab:
@@ -686,6 +921,11 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ca8a4bd68129a3548aa6a2eed550551c, type: 3}
+--- !u!4 &206600019 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 292764757}
 --- !u!1 &207408796 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: ca8a4bd68129a3548aa6a2eed550551c,
@@ -705,6 +945,75 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ca8a4bd68129a3548aa6a2eed550551c, type: 3}
+--- !u!1 &214530519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 214530520}
+  - component: {fileID: 214530522}
+  - component: {fileID: 214530521}
+  m_Layer: 5
+  m_Name: treasure7Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &214530520
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 214530519}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &214530521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 214530519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &214530522
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 214530519}
+  m_CullTransparentMesh: 0
 --- !u!1 &220719294
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,6 +1153,113 @@ Transform:
   m_Father: {fileID: 251185766}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &225393607
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 633559593}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure17
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 1971074119}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &226517654
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1935950253}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure12
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 84381515}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &230726342 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1770698212}
 --- !u!1 &232550201 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: ca8a4bd68129a3548aa6a2eed550551c,
@@ -979,6 +1395,75 @@ Transform:
   m_Father: {fileID: 251185766}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &250464898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 250464899}
+  - component: {fileID: 250464901}
+  - component: {fileID: 250464900}
+  m_Layer: 5
+  m_Name: treasure15Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &250464899
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 250464898}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &250464900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 250464898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &250464901
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 250464898}
+  m_CullTransparentMesh: 0
 --- !u!1 &251185765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,6 +1532,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 345534581}
+  - {fileID: 206600019}
   m_Father: {fileID: 397758711}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1105,11 +1591,113 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: f8b246b844fb41548a8a2466b5920cee, type: 3}
+--- !u!1001 &274749134
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2113792951}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure22
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 1148914208}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!224 &279954566 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224395464285433880, guid: c2eb346eeaf116d4687be67b6ef76edc,
     type: 2}
   m_PrefabInternal: {fileID: 149713973}
+--- !u!1001 &292764757
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 253863057}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure21
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 1308463857}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &298854302
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,6 +1724,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 844830724}
+  - {fileID: 1911675439}
   m_Father: {fileID: 966605030}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1295,6 +1884,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 990646580}
+  - {fileID: 907261111}
   m_Father: {fileID: 2097980760}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -1394,6 +1984,57 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ca8a4bd68129a3548aa6a2eed550551c, type: 3}
+--- !u!1001 &397593782
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 896959016}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure19
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 1208055568}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &397758710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1436,6 +2077,11 @@ Transform:
   m_Father: {fileID: 258862810}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &412878995 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 696586989}
 --- !u!1 &413552439 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: ca8a4bd68129a3548aa6a2eed550551c,
@@ -1514,6 +2160,11 @@ Transform:
   m_Father: {fileID: 1794923382}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &466676165 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1540823870}
 --- !u!1 &468124995 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1895113974296796, guid: c8757e2975a0cc94d8696755479bdf0d,
@@ -1628,6 +2279,75 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfae6d1dc70b80348a8fb4f4f8b41665, type: 3}
   m_IsPrefabAsset: 0
+--- !u!1 &489262181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 489262182}
+  - component: {fileID: 489262184}
+  - component: {fileID: 489262183}
+  m_Layer: 5
+  m_Name: treasure3Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &489262182
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489262181}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &489262183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489262181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &489262184
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489262181}
+  m_CullTransparentMesh: 0
 --- !u!1001 &489470063
 Prefab:
   m_ObjectHideFlags: 0
@@ -1686,6 +2406,184 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfae6d1dc70b80348a8fb4f4f8b41665, type: 3}
   m_IsPrefabAsset: 0
+--- !u!1 &497857302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 497857303}
+  - component: {fileID: 497857305}
+  - component: {fileID: 497857304}
+  m_Layer: 5
+  m_Name: treasure24Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &497857303
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 497857302}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &497857304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 497857302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &497857305
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 497857302}
+  m_CullTransparentMesh: 0
+--- !u!1001 &502667331
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1826754227}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure23
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 772438253}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1 &503979648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 503979649}
+  - component: {fileID: 503979651}
+  - component: {fileID: 503979650}
+  m_Layer: 0
+  m_Name: yellowGoal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &503979649
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 503979648}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 1.22, z: 0}
+  m_LocalScale: {x: 1.5000019, y: 1, z: 1.5000019}
+  m_Children: []
+  m_Father: {fileID: 1444874281}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &503979650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 503979648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee74948345bf97a47834a4199c63ca74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TreasureCardObj: {fileID: 0}
+--- !u!65 &503979651
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 65275147287134898, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 503979648}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &507793927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1715,6 +2613,80 @@ Transform:
   m_Father: {fileID: 251185766}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &518010316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 518010317}
+  - component: {fileID: 518010319}
+  - component: {fileID: 518010318}
+  m_Layer: 5
+  m_Name: treasure8Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &518010317
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 518010316}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &518010318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 518010316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &518010319
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 518010316}
+  m_CullTransparentMesh: 0
+--- !u!4 &533891064 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1572717843}
 --- !u!1 &538325913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1741,6 +2713,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2113789873}
+  - {fileID: 412878995}
   m_Father: {fileID: 2097980760}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -2132,6 +3105,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1464439886}
+  - {fileID: 1564957868}
   m_Father: {fileID: 2097980760}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2213,6 +3187,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1332385672}
+  - {fileID: 1822369723}
   m_Father: {fileID: 1946467683}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2341,6 +3316,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: ca8a4bd68129a3548aa6a2eed550551c,
     type: 3}
   m_PrefabInternal: {fileID: 648267742}
+--- !u!1 &665099172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 665099173}
+  - component: {fileID: 665099175}
+  - component: {fileID: 665099174}
+  m_Layer: 5
+  m_Name: treasure9Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &665099173
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 665099172}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &665099174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 665099172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &665099175
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 665099172}
+  m_CullTransparentMesh: 0
 --- !u!1 &667189092
 GameObject:
   m_ObjectHideFlags: 0
@@ -2367,9 +3411,221 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 413552440}
+  - {fileID: 1273943757}
   m_Father: {fileID: 1946467683}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &673213049
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1960199570}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure24
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 497857302}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1 &688495735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 688495736}
+  - component: {fileID: 688495738}
+  - component: {fileID: 688495737}
+  m_Layer: 0
+  m_Name: blueGoal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &688495736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 688495735}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 1.22, z: 0}
+  m_LocalScale: {x: 1.5000019, y: 1, z: 1.5000019}
+  m_Children: []
+  m_Father: {fileID: 2006911086}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &688495737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 688495735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee74948345bf97a47834a4199c63ca74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TreasureCardObj: {fileID: 0}
+--- !u!65 &688495738
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 65275147287134898, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 688495735}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &695757920
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 983217525}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure13
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 1955585464}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &696586989
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 538325914}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 555394813}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &710510531 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: ca8a4bd68129a3548aa6a2eed550551c,
@@ -2389,6 +3645,11 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ca8a4bd68129a3548aa6a2eed550551c, type: 3}
+--- !u!4 &726579616 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1750860581}
 --- !u!1 &736520528
 GameObject:
   m_ObjectHideFlags: 0
@@ -2558,6 +3819,144 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca8a4bd68129a3548aa6a2eed550551c, type: 3}
   m_IsPrefabAsset: 0
+--- !u!1 &768401848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 768401849}
+  - component: {fileID: 768401851}
+  - component: {fileID: 768401850}
+  m_Layer: 5
+  m_Name: treasure10Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &768401849
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 768401848}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &768401850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 768401848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &768401851
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 768401848}
+  m_CullTransparentMesh: 0
+--- !u!1 &772438253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 772438254}
+  - component: {fileID: 772438256}
+  - component: {fileID: 772438255}
+  m_Layer: 5
+  m_Name: treasure23Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &772438254
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 772438253}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &772438255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 772438253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &772438256
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 772438253}
+  m_CullTransparentMesh: 0
 --- !u!1001 &777584758
 Prefab:
   m_ObjectHideFlags: 0
@@ -2666,10 +4065,15 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1731828053}
-  - {fileID: 1770831984}
+  - {fileID: 466676165}
   m_Father: {fileID: 2097980760}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!4 &821581885 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 695757920}
 --- !u!1 &822777412
 GameObject:
   m_ObjectHideFlags: 0
@@ -2927,60 +4331,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f8b246b844fb41548a8a2466b5920cee,
     type: 3}
   m_PrefabInternal: {fileID: 844830723}
---- !u!1 &874693640
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 874693641}
-  - component: {fileID: 874693643}
-  - component: {fileID: 874693642}
-  m_Layer: 0
-  m_Name: treasure4
-  m_TagString: treasure
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &874693641
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 874693640}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1.22, z: 0}
-  m_LocalScale: {x: 1.5000019, y: 1, z: 1.5000019}
-  m_Children: []
-  m_Father: {fileID: 1922617043}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &874693642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 874693640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee74948345bf97a47834a4199c63ca74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TreasureCardObj: {fileID: 555394813}
---- !u!65 &874693643
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 874693640}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &875884979
 Prefab:
   m_ObjectHideFlags: 0
@@ -3065,9 +4415,79 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1981791145}
+  - {fileID: 1375728146}
   m_Father: {fileID: 397758711}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &900836443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 900836444}
+  - component: {fileID: 900836446}
+  - component: {fileID: 900836445}
+  m_Layer: 5
+  m_Name: treasure20Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &900836444
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 900836443}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &900836445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 900836443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &900836446
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 900836443}
+  m_CullTransparentMesh: 0
 --- !u!1 &902241479
 GameObject:
   m_ObjectHideFlags: 0
@@ -3097,6 +4517,11 @@ Transform:
   m_Father: {fileID: 251185766}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &907261111 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1709982435}
 --- !u!1001 &908609264
 Prefab:
   m_ObjectHideFlags: 0
@@ -3348,9 +4773,61 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 221352788}
+  - {fileID: 821581885}
   m_Father: {fileID: 1946467683}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &984346528
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1226674729}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 900836443}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &990041869 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: bfae6d1dc70b80348a8fb4f4f8b41665,
@@ -3572,6 +5049,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 648267743}
+  - {fileID: 1851250639}
   m_Father: {fileID: 2097980760}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3739,60 +5217,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfae6d1dc70b80348a8fb4f4f8b41665, type: 3}
   m_IsPrefabAsset: 0
---- !u!1 &1137831235
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1137831236}
-  - component: {fileID: 1137831237}
-  - component: {fileID: 1137831238}
-  m_Layer: 0
-  m_Name: treasure1
-  m_TagString: treasure
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1137831236
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1137831235}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.22, z: 0}
-  m_LocalScale: {x: 1.5, y: 1, z: 1.5}
-  m_Children: []
-  m_Father: {fileID: 26892129}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1137831237
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1137831235}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1137831238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1137831235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee74948345bf97a47834a4199c63ca74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TreasureCardObj: {fileID: 555394813}
 --- !u!1 &1142063126 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: ca8a4bd68129a3548aa6a2eed550551c,
@@ -3870,6 +5294,75 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8b246b844fb41548a8a2466b5920cee, type: 3}
   m_IsPrefabAsset: 0
+--- !u!1 &1148914208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1148914209}
+  - component: {fileID: 1148914211}
+  - component: {fileID: 1148914210}
+  m_Layer: 5
+  m_Name: treasure22Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1148914209
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1148914208}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1148914210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1148914208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1148914211
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1148914208}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1152902478
 Prefab:
   m_ObjectHideFlags: 0
@@ -3987,6 +5480,75 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8b246b844fb41548a8a2466b5920cee, type: 3}
   m_IsPrefabAsset: 0
+--- !u!1 &1161318912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1161318913}
+  - component: {fileID: 1161318915}
+  - component: {fileID: 1161318914}
+  m_Layer: 5
+  m_Name: treasure5Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1161318913
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1161318912}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1161318914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1161318912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1161318915
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1161318912}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1169457061
 Prefab:
   m_ObjectHideFlags: 0
@@ -4064,6 +5626,75 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ca8a4bd68129a3548aa6a2eed550551c, type: 3}
+--- !u!1 &1178769623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1178769624}
+  - component: {fileID: 1178769626}
+  - component: {fileID: 1178769625}
+  m_Layer: 5
+  m_Name: treasure6Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1178769624
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1178769623}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1178769625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1178769623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1178769626
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1178769623}
+  m_CullTransparentMesh: 0
 --- !u!1 &1180903842
 GameObject:
   m_ObjectHideFlags: 0
@@ -4090,6 +5721,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 570759610}
+  - {fileID: 1690556080}
   m_Father: {fileID: 2097980760}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4197,6 +5829,80 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfae6d1dc70b80348a8fb4f4f8b41665, type: 3}
   m_IsPrefabAsset: 0
+--- !u!4 &1205615260 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 122049722}
+--- !u!1 &1208055568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1208055569}
+  - component: {fileID: 1208055571}
+  - component: {fileID: 1208055570}
+  m_Layer: 5
+  m_Name: treasure19Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1208055569
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1208055568}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1208055570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1208055568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1208055571
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1208055568}
+  m_CullTransparentMesh: 0
 --- !u!1 &1209122320
 GameObject:
   m_ObjectHideFlags: 0
@@ -4373,9 +6079,15 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1769088001}
+  - {fileID: 104959041}
   m_Father: {fileID: 397758711}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1229193253 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 673213049}
 --- !u!1 &1236311395
 GameObject:
   m_ObjectHideFlags: 0
@@ -4402,9 +6114,62 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1305923772}
+  - {fileID: 2135185897}
   m_Father: {fileID: 2097980760}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!1001 &1248390773
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1922617043}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 489262181}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1273943757 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 91631272}
 --- !u!1001 &1284471638
 Prefab:
   m_ObjectHideFlags: 0
@@ -4468,6 +6233,126 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: ca8a4bd68129a3548aa6a2eed550551c,
     type: 3}
   m_PrefabInternal: {fileID: 1284471638}
+--- !u!1 &1293393351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1293393352}
+  - component: {fileID: 1293393354}
+  - component: {fileID: 1293393353}
+  m_Layer: 5
+  m_Name: treasure16Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1293393352
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1293393351}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1293393353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1293393351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1293393354
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1293393351}
+  m_CullTransparentMesh: 0
+--- !u!1001 &1299568923
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1180903843}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 1700719795}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1304764809
 GameObject:
   m_ObjectHideFlags: 0
@@ -4572,6 +6457,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: ca8a4bd68129a3548aa6a2eed550551c,
     type: 3}
   m_PrefabInternal: {fileID: 1305923771}
+--- !u!1 &1308463857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1308463858}
+  - component: {fileID: 1308463860}
+  - component: {fileID: 1308463859}
+  m_Layer: 5
+  m_Name: treasure21Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1308463858
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1308463857}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1308463859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1308463857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1308463860
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1308463857}
+  m_CullTransparentMesh: 0
 --- !u!1 &1319710355
 GameObject:
   m_ObjectHideFlags: 0
@@ -4707,6 +6661,75 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfae6d1dc70b80348a8fb4f4f8b41665, type: 3}
   m_IsPrefabAsset: 0
+--- !u!1 &1342122807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1342122808}
+  - component: {fileID: 1342122810}
+  - component: {fileID: 1342122809}
+  m_Layer: 5
+  m_Name: treasure2Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1342122808
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1342122807}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1342122809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1342122807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1342122810
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1342122807}
+  m_CullTransparentMesh: 0
 --- !u!1 &1375451359 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1518927955286130, guid: 182b3f92e9db8f94f9dbf1f4c8bc13b7,
@@ -4723,6 +6746,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6c17f1d8cb7eb545a0fd9a43a27f604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1375728146 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 397593782}
 --- !u!1001 &1376259571
 Prefab:
   m_ObjectHideFlags: 0
@@ -4781,6 +6809,75 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfae6d1dc70b80348a8fb4f4f8b41665, type: 3}
   m_IsPrefabAsset: 0
+--- !u!1 &1421303354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1421303355}
+  - component: {fileID: 1421303357}
+  - component: {fileID: 1421303356}
+  m_Layer: 5
+  m_Name: treasure18Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1421303355
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1421303354}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1421303356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1421303354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1421303357
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1421303354}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1426368623
 Prefab:
   m_ObjectHideFlags: 0
@@ -4866,6 +6963,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1223990181}
+  - {fileID: 503979649}
   m_Father: {fileID: 966605030}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4994,6 +7092,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: ca8a4bd68129a3548aa6a2eed550551c,
     type: 3}
   m_PrefabInternal: {fileID: 1464439885}
+--- !u!1 &1516847422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1516847423}
+  - component: {fileID: 1516847425}
+  - component: {fileID: 1516847424}
+  m_Layer: 5
+  m_Name: treasure4Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1516847423
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1516847422}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1516847424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1516847422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1516847425
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1516847422}
+  m_CullTransparentMesh: 0
 --- !u!1 &1519992350
 GameObject:
   m_ObjectHideFlags: 0
@@ -5107,6 +7274,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 613045463}
+  - {fileID: 2143955386}
   m_Father: {fileID: 966605030}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5129,6 +7297,57 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ca8a4bd68129a3548aa6a2eed550551c, type: 3}
+--- !u!1001 &1540823870
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 795144898}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 1178769623}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &1544084833
 Prefab:
   m_ObjectHideFlags: 0
@@ -5186,6 +7405,62 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfae6d1dc70b80348a8fb4f4f8b41665, type: 3}
+  m_IsPrefabAsset: 0
+--- !u!4 &1551016662 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1248390773}
+--- !u!1001 &1554756093
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 624947766}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 1161318912}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1561040844
 Prefab:
@@ -5254,6 +7529,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: ca8a4bd68129a3548aa6a2eed550551c,
     type: 3}
   m_PrefabInternal: {fileID: 1561040844}
+--- !u!4 &1564957868 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1554756093}
 --- !u!1001 &1566047656
 Prefab:
   m_ObjectHideFlags: 0
@@ -5336,6 +7616,57 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: bfae6d1dc70b80348a8fb4f4f8b41665, type: 3}
+--- !u!1001 &1572717843
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 95923697}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure14
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 1623528427}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1591004811
 GameObject:
   m_ObjectHideFlags: 0
@@ -5580,6 +7911,75 @@ Transform:
   m_Father: {fileID: 251185766}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1623528427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1623528428}
+  - component: {fileID: 1623528430}
+  - component: {fileID: 1623528429}
+  m_Layer: 5
+  m_Name: treasure14Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1623528428
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1623528427}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1623528429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1623528427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1623528430
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1623528427}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1626470819
 Prefab:
   m_ObjectHideFlags: 0
@@ -5727,9 +8127,186 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1720567743}
+  - {fileID: 1917518062}
   m_Father: {fileID: 2097980760}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!4 &1690556080 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1299568923}
+--- !u!1001 &1700192090
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1236311396}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 768401848}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1 &1700719795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1700719796}
+  - component: {fileID: 1700719798}
+  - component: {fileID: 1700719797}
+  m_Layer: 5
+  m_Name: treasure11Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1700719796
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700719795}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1700719797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700719795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1700719798
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700719795}
+  m_CullTransparentMesh: 0
+--- !u!1001 &1709982435
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 334705741}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 665099172}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &1720567742
 Prefab:
   m_ObjectHideFlags: 0
@@ -5899,6 +8476,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: ca8a4bd68129a3548aa6a2eed550551c,
     type: 3}
   m_PrefabInternal: {fileID: 1731828052}
+--- !u!1001 &1750860581
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6946923}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 1293393351}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1769088000 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: f8b246b844fb41548a8a2466b5920cee,
@@ -5981,60 +8609,57 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8b246b844fb41548a8a2466b5920cee, type: 3}
   m_IsPrefabAsset: 0
---- !u!1 &1770831983
-GameObject:
+--- !u!1001 &1770698212
+Prefab:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1770831984}
-  - component: {fileID: 1770831986}
-  - component: {fileID: 1770831985}
-  m_Layer: 0
-  m_Name: treasure2
-  m_TagString: treasure
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1770831984
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1770831983}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.22, z: 0}
-  m_LocalScale: {x: 1.5000019, y: 1, z: 1.5000019}
-  m_Children: []
-  m_Father: {fileID: 795144898}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1770831985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1770831983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee74948345bf97a47834a4199c63ca74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TreasureCardObj: {fileID: 555394813}
---- !u!65 &1770831986
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1770831983}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Modification:
+    m_TransformParent: {fileID: 26009083}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 250464898}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1784300344 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: f8b246b844fb41548a8a2466b5920cee,
@@ -6202,6 +8827,62 @@ Transform:
   m_Father: {fileID: 251185766}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1802255777 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 502667331}
+--- !u!1001 &1811290138
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1032007763}
+    m_Modifications:
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+        type: 2}
+      propertyPath: TreasureCardObj
+      value: 
+      objectReference: {fileID: 518010316}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1820086157 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: ca8a4bd68129a3548aa6a2eed550551c,
@@ -6221,6 +8902,11 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ca8a4bd68129a3548aa6a2eed550551c, type: 3}
+--- !u!4 &1822369723 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 225393607}
 --- !u!1 &1826754226
 GameObject:
   m_ObjectHideFlags: 0
@@ -6247,6 +8933,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 359743607}
+  - {fileID: 1802255777}
   m_Father: {fileID: 397758711}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6269,6 +8956,11 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: f8b246b844fb41548a8a2466b5920cee, type: 3}
+--- !u!4 &1851250639 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1811290138}
 --- !u!1001 &1860129826
 Prefab:
   m_ObjectHideFlags: 0
@@ -6473,6 +9165,69 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ca8a4bd68129a3548aa6a2eed550551c, type: 3}
+--- !u!1 &1911675438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1911675439}
+  - component: {fileID: 1911675441}
+  - component: {fileID: 1911675440}
+  m_Layer: 0
+  m_Name: redGoal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1911675439
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1911675438}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 1.22, z: 0}
+  m_LocalScale: {x: 1.5000019, y: 1, z: 1.5000019}
+  m_Children: []
+  m_Father: {fileID: 298854303}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1911675440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1911675438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee74948345bf97a47834a4199c63ca74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TreasureCardObj: {fileID: 0}
+--- !u!65 &1911675441
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 65275147287134898, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1911675438}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1917518062 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 145271166}
 --- !u!1001 &1917569497
 Prefab:
   m_ObjectHideFlags: 0
@@ -6551,7 +9306,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1284471639}
-  - {fileID: 874693641}
+  - {fileID: 1551016662}
   m_Father: {fileID: 2097980760}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6581,6 +9336,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1561040845}
+  - {fileID: 81413549}
   m_Father: {fileID: 2097980760}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6627,7 +9383,11 @@ Prefab:
         type: 2}
       propertyPath: TreasureCardObj
       value: 
-      objectReference: {fileID: 555394813}
+      objectReference: {fileID: 1342122807}
+    - target: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
+      propertyPath: m_Name
+      value: treasure2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a53f1d0a33491e428ca662fdd9b5e7b, type: 2}
   m_IsPrefabAsset: 0
@@ -6665,6 +9425,75 @@ Transform:
   m_Father: {fileID: 258862810}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1955585464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1955585465}
+  - component: {fileID: 1955585467}
+  - component: {fileID: 1955585466}
+  m_Layer: 5
+  m_Name: treasure13Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1955585465
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1955585464}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1955585466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1955585464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1955585467
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1955585464}
+  m_CullTransparentMesh: 0
 --- !u!1 &1960199569
 GameObject:
   m_ObjectHideFlags: 0
@@ -6691,9 +9520,79 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 781873575}
+  - {fileID: 1229193253}
   m_Father: {fileID: 397758711}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1971074119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1971074120}
+  - component: {fileID: 1971074122}
+  - component: {fileID: 1971074121}
+  m_Layer: 5
+  m_Name: treasure17Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1971074120
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1971074119}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279954566}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -247, y: -186.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1971074121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1971074119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1971074122
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1971074119}
+  m_CullTransparentMesh: 0
 --- !u!1 &1981791144 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: f8b246b844fb41548a8a2466b5920cee,
@@ -6718,6 +9617,11 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: f8b246b844fb41548a8a2466b5920cee, type: 3}
+--- !u!4 &1989742708 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 274749134}
 --- !u!1 &1998292631
 GameObject:
   m_ObjectHideFlags: 0
@@ -6797,6 +9701,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1626470820}
+  - {fileID: 688495736}
   m_Father: {fileID: 966605030}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7077,6 +9982,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 259798370}
+  - {fileID: 1989742708}
   m_Father: {fileID: 397758711}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7104,3 +10010,66 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: bfae6d1dc70b80348a8fb4f4f8b41665, type: 3}
+--- !u!4 &2135185897 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1700192090}
+--- !u!1 &2143955385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1760295083826226, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2143955386}
+  - component: {fileID: 2143955388}
+  - component: {fileID: 2143955387}
+  m_Layer: 0
+  m_Name: greenGoal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2143955386
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4508338642748746, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2143955385}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 1.22, z: 0}
+  m_LocalScale: {x: 1.5000019, y: 1, z: 1.5000019}
+  m_Children: []
+  m_Father: {fileID: 1531984161}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2143955387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114044234393964654, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2143955385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee74948345bf97a47834a4199c63ca74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TreasureCardObj: {fileID: 0}
+--- !u!65 &2143955388
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 65275147287134898, guid: 3a53f1d0a33491e428ca662fdd9b5e7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2143955385}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
