@@ -5,12 +5,11 @@ using UnityEngine;
 public class CollectTreasures : MonoBehaviour
 {
     
-    List<GameObject> treasureName;
-    public EndTurn endPlayerTurn;
+    GameObject trausureName;
 
-
-    // Use this for initialization
-    void Start ()
+    
+	// Use this for initialization
+	void Start ()
     {
 	}
 	
@@ -23,14 +22,22 @@ public class CollectTreasures : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //treasure.CheckID(treasureID);
-        treasureName = GetComponentInParent<PlayerPieces>().treasures;
 
-        if (other.gameObject == treasureName[0])
+        if (other.tag != "goal")
         {
-            other.gameObject.SetActive(false);
-            treasureName.RemoveAt(0);
-            endPlayerTurn.buttonPressed = true;
-            Debug.Log(treasureName);
+            trausureName = GetComponentInParent<PlayerPieces>().treasures[0];
+
+            if (other.gameObject == trausureName)
+            {
+                //treasure.CheckID(treasureID);
+                //if (treasureID == playerTreasureID)
+                //{
+                //    other.gameObject.SetActive(false);
+                //}
+
+                other.gameObject.SetActive(false);
+                Debug.Log(trausureName);
+            }
         }
     }
 }
