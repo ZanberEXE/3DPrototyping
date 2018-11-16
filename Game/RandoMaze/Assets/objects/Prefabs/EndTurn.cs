@@ -11,4 +11,9 @@ public class EndTurn : MonoBehaviour {
         //Debug.Log("Button was pressed!");
         buttonPressed = true;
     }
+
+    public void OpenGameMenu()
+    {
+
+    }
 }
