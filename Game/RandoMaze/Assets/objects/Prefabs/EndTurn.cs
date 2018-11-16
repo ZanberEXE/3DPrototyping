@@ -12,8 +12,8 @@ public class EndTurn : MonoBehaviour {
         buttonPressed = true;
     }
 
-    public void OpenGameMenu()
+    public void Rotate()
     {
-
+        maze.FindObjectOfType<maze>().rotate = true;
     }
 }
