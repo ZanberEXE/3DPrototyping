@@ -265,6 +265,10 @@ public class maze : MonoBehaviour {
     //end of movement
     private void finishMove(List<GameObject> walls)
     {
+        for (int i = 0; i < walls.Count; i++)
+        {
+            walls[i].transform.position = new Vector3(Mathf.Round(walls[i].transform.position.x), 0, (Mathf.Round(walls[i].transform.position.z)));
+        }
         list.Find(x => x.tag.Equals("InputWall")).tag = "Wall";
         if (orientation == "x")
         {

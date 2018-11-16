@@ -95,5 +95,17 @@ public class MoveWall : MonoBehaviour {
         //}
     }
 
+    public void RotateWall()
+    {
+        maze.FindObjectOfType<maze>().rotate = true;
+    }
 
+    public void ActivatePattern()
+    {
+        maze.FindObjectOfType<maze>().patternactivated = true;
+    }
+    public void DeactivatePattern()
+    {
+        maze.FindObjectOfType<maze>().patternactivated = false;
+    }
 }
