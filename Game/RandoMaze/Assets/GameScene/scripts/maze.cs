@@ -35,6 +35,16 @@ public class maze : MonoBehaviour {
     private Vector3 movement;
     private Vector2 nextPos;
     private int moveValue;
+    //speed of walls
+    private float speed=0.5f;
+    private Vector3 moveleft;
+    private float range;
+
+    #region for options
+    //is the pattern activated
+    public bool patternactivated = true;
+    public bool rotate = false;
+    #endregion
 
     #region Testvalues
     //pattern parameters
@@ -45,15 +55,16 @@ public class maze : MonoBehaviour {
     //can be rotated, moved
     public bool finished = false;
     //rotate if true
-    public bool rotate = false;
+    
     //move inputblock and insert
     public bool startMove = false;
-    //public bool moveBlocks = true;
+    //input parameters
     public string orientation = "y";
     public string plusOrMinus = "+";
     public int number = 1;
     #endregion
     
+    //rotation of the rotation pattern
     private void rotatePattern()
     {
         int zRows = 0;
@@ -91,9 +102,14 @@ public class maze : MonoBehaviour {
                 }
             }
         }
+        for (int i = 0; i < surfaces.Count; i++)
+        {
+            surfaces[i].BuildNavMesh();
+        }
         changePattern();
     }
 
+    //nect row/col for pattern
     private void changePattern()
     {
         switch (pnumber)
@@ -115,6 +131,7 @@ public class maze : MonoBehaviour {
         }
     }
 
+    //rotate the free wall
     private void rotateInputWall()
     {
         list.Add(GameObject.FindGameObjectWithTag("InputWall"));
@@ -188,16 +205,8 @@ public class maze : MonoBehaviour {
                 {
                     moveValue = -1;
                 }
-                moveto = list[i].transform.position + posSteps * new Vector3(moveValue, 0, 0);
-                list[i].transform.position = moveto;
-            }
-            list.Find(x => x.tag.Equals("InputWall")).tag = "Wall";
-            if (plusOrMinus == "+")
-            {
-                list.Find(x => x.transform.position.x > 9).tag = "InputWall";
-            }else if (plusOrMinus == "-")
-            {
-                list.Find(x => x.transform.position.x < -9).tag = "InputWall";
+                movement = posSteps * new Vector3(moveValue, 0, 0);
+                moveleft = movement;
             }
         }
         else if(orientation=="y")
@@ -220,10 +229,56 @@ public class maze : MonoBehaviour {
                 {
                     moveValue = 1;
                 }
-                moveto = list[i].transform.position + posSteps * new Vector3(0, 0, moveValue);
-                list[i].transform.position = moveto;
+                movement = posSteps * new Vector3(0, 0, moveValue);
+                moveleft = movement;
             }
-            list.Find(x => x.tag.Equals("InputWall")).tag = "Wall";
+        }
+        
+        //add disable Button
+    }
+
+    //continuous movement
+    private void move(List<GameObject> walls)
+    {
+        
+        range = Vector3.Distance(new Vector3(0, 0, 0), moveleft -= movement * speed * Time.deltaTime);
+        moveto = movement * speed * Time.deltaTime;
+
+        if (range>Vector3.Distance(new Vector3(0,0,0),moveto)) {
+            for (int i = 0; i < walls.Count; i++)
+            {
+                walls[i].transform.position += moveto;
+            }
+        }
+        else
+        {
+            for(int i = 0; i < walls.Count; i++)
+            {
+                walls[i].transform.position += (moveleft -= movement * speed * Time.deltaTime);
+                moveleft = Vector3.zero;
+            }
+            finishMove(walls);
+        }
+        //for continous movement
+    }
+
+    //end of movement
+    private void finishMove(List<GameObject> walls)
+    {
+        list.Find(x => x.tag.Equals("InputWall")).tag = "Wall";
+        if (orientation == "x")
+        {
+            if (plusOrMinus == "+")
+            {
+                list.Find(x => x.transform.position.x > 9).tag = "InputWall";
+            }
+            else if (plusOrMinus == "-")
+            {
+                list.Find(x => x.transform.position.x < -9).tag = "InputWall";
+            }
+        }
+        else if (orientation == "y")
+        {
             if (plusOrMinus == "+")
             {
                 list.Find(x => x.transform.position.z < -9).tag = "InputWall";
@@ -233,14 +288,11 @@ public class maze : MonoBehaviour {
                 list.Find(x => x.transform.position.z > 9).tag = "InputWall";
             }
         }
-        //empty list
+        for (int i = 0; i < surfaces.Count; i++)
+        {
+            surfaces[i].BuildNavMesh();
+        }
         list.Clear();
-        //add disable Button
-    }
-
-    private void move(List<GameObject> walls)
-    {
-        //for continous movement
     }
 
     //find next Place for Wall
@@ -289,7 +341,7 @@ public class maze : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (pattern)
+        if (pattern&&patternactivated)
         {
             rotatePattern();
             pattern = false;
@@ -304,17 +356,14 @@ public class maze : MonoBehaviour {
             {
                 addWall();
                 moveTo();
-                for (int i = 0; i < surfaces.Count; i++)
-                {
-                    surfaces[i].BuildNavMesh();
-                }
                 finished = true;
                 startMove = false;
             }
         }
-        if (movement.x != 0 || movement.z != 0)
+        if (moveleft.x != 0 || moveleft.z != 0)
         {
             move(list);
+            
         }
 	}
 }
