@@ -121,6 +121,12 @@ MonoBehaviour:
     isTurn: 0
     wasTurnPrev: 0
   endPlayerTurn: {fileID: 0}
+  maze: {fileID: 0}
+  finishedwall: 0
+  playernmb: 0
+  treasures: []
+  goal: {fileID: 0}
+  hasTreasures: 0
   isTurn: 0
 --- !u!114 &114646768221637988
 MonoBehaviour:
