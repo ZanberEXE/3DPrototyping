@@ -6,7 +6,7 @@ public class CollectTreasures : MonoBehaviour
 {
     
     GameObject trausureName;
-
+    public EndTurn turn;
     
 	// Use this for initialization
 	void Start ()
@@ -35,7 +35,9 @@ public class CollectTreasures : MonoBehaviour
                 //    other.gameObject.SetActive(false);
                 //}
 
-                other.gameObject.SetActive(false);
+                turn.buttonPressed = true;
+
+                //other.gameObject.SetActive(false);
                 Debug.Log(trausureName);
             }
         }
