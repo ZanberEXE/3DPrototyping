@@ -7,12 +7,7 @@ public class CollectTreasures : MonoBehaviour
     
     GameObject trausureName;
     public EndTurn turn;
-    public bool finishgame = false;
     
-    public void finishegame()
-    {
-        finishgame = true;
-    }
 	// Use this for initialization
 	void Start ()
     {
@@ -46,7 +41,7 @@ public class CollectTreasures : MonoBehaviour
                 Debug.Log(trausureName);
             }
         }
-        else if(GetComponentInParent<PlayerPieces>().treasures[0].tag=="goal"&&finishgame)
+        else if(GetComponentInParent<PlayerPieces>().treasures[0].tag=="goal")
         {
             GetComponentInParent<PlayerPieces>().reachedGoal = true; 
         }
