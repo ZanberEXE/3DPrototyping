@@ -297,6 +297,8 @@ public class maze : MonoBehaviour {
             surfaces[i].BuildNavMesh();
         }
         list.Clear();
+        GameObject.Find("UI").GetComponent<EndTurn>().buttonPressed = false;
+        finished = true;
     }
 
     //find next Place for Wall
@@ -360,7 +362,6 @@ public class maze : MonoBehaviour {
             {
                 addWall();
                 moveTo();
-                finished = true;
                 startMove = false;
             }
         }
