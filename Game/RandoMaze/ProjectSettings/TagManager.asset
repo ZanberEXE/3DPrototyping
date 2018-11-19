@@ -10,6 +10,7 @@ TagManager:
   - treasure
   - goal
   - card
+  - playernum
   layers:
   - Default
   - TransparentFX
