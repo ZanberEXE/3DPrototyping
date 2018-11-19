@@ -41,5 +41,9 @@ public class CollectTreasures : MonoBehaviour
                 Debug.Log(trausureName);
             }
         }
+        else if(GetComponentInParent<PlayerPieces>().treasures[0].tag=="goal")
+        {
+            GetComponentInParent<PlayerPieces>().reachedGoal = true; 
+        }
     }
 }
