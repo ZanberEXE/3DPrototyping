@@ -54,7 +54,15 @@ public class PlayerPieces: MonoBehaviour
         //set value of isTurn equal to value that current Player holds
         isTurn = turnClass.isTurn;
         finishedwall = maze.finished;
-
+        if (treasures.Count != 0 && treasures[0] != goal) {
+            if (isTurn)
+            {
+                treasures[0].GetComponent<TreasureCard>().TreasureCardObj.SetActive(true);
+            } else
+            {
+                treasures[0].GetComponent<TreasureCard>().TreasureCardObj.SetActive(false);
+            }
+        }
         if (maze.GetComponent<RandoMazeBoard>().playerNum != playernmb)
         {
             playernmb = maze.GetComponent<RandoMazeBoard>().playerNum;
@@ -69,6 +77,7 @@ public class PlayerPieces: MonoBehaviour
             //if isTurn = true
             if(isTurn)
             {
+                
                 move.moving = true;
                 NVM.moving2 = true;
 
@@ -89,6 +98,7 @@ public class PlayerPieces: MonoBehaviour
                     maze.finished = false;
                 }
             }
+
         }
         
     }

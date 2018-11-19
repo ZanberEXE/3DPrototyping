@@ -2,12 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RandoMazeBoard : MonoBehaviour {
 
     //List of Players
     public List<TurnClass> playersGroup;
-    public List<GameObject> playersNum;
+    
 
     public bool giveCards = false;
     public List<GameObject> treasure;
@@ -24,13 +25,14 @@ public class RandoMazeBoard : MonoBehaviour {
     const int removeNum = 0;
     
     public int playerNum = 4;
+    private GameObject usable;
     
 	// Use this for initialization
 	void Start ()
     {
         //temp Solution changing number of players
         playersGroup.RemoveRange(playerIndex, removeNum);
-
+        usable = GameObject.Find("Numbber");
         //GenerateBoard();
 
         //Reset turns in the beginning
@@ -62,12 +64,52 @@ public class RandoMazeBoard : MonoBehaviour {
         }
     }
 
+    public void startGame()
+    {
+        giveCards = true;
+        if (playerNum != 4)
+        {
+            switch (playerNum)
+            {
+                case 2:
+                    playersGroup[3].playerGameObject.SetActive(false);
+                    playersGroup[2].playerGameObject.SetActive(false);
+                    break;
+                case 3:
+                    playersGroup[3].playerGameObject.SetActive(false);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+    }
+
+    public void addPlayer()
+    {
+        if (playerNum < 4)
+        {
+            Debug.Log("add Player");
+            playerNum++;
+            usable.GetComponent<Text>().text = Convert.ToString(playerNum);
+            }
+    }
+    public void removePlayer()
+    {
+        if (playerNum > 2)
+        {
+            Debug.Log("remove Player");
+            playerNum--;
+            usable.GetComponent<Text>().text = Convert.ToString(playerNum);
+        }
+    }
+
     //reset turn to Beginning
-        //Player1 starts
-        //rest didn't have their turn yet in this round
+    //Player1 starts
+    //rest didn't have their turn yet in this round
     private void ResetTurns()
     {
-        for(int i = 0; i < playersGroup.Count; i++)     //go through each player one by one
+        for(int i = 0; i < playerNum; i++)     //go through each player one by one
         {
             if(i == 0)  //start with first player
             {
@@ -89,7 +131,7 @@ public class RandoMazeBoard : MonoBehaviour {
         //set previous Player 
     private void UpdateTurns()
     {
-        for(int i = 0; i < playersGroup.Count; i++) //go through each player
+        for(int i = 0; i < playerNum; i++) //go through each player
         {
             //if Player didn't have his turn yet
                 //set isTurn to true
@@ -102,7 +144,7 @@ public class RandoMazeBoard : MonoBehaviour {
             
                 //if iteration = amount of players And the last Player had his turn
                     //reset the turns -> new round
-            else if (i == playersGroup.Count - 1 && playersGroup[i].wasTurnPrev)
+            else if (i == playerNum - 1 && playersGroup[i].wasTurnPrev)
                 ResetTurns();
         }
     }
