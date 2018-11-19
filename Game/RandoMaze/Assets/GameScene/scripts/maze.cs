@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class maze : MonoBehaviour {
 
@@ -51,7 +52,7 @@ public class maze : MonoBehaviour {
     public bool pattern = false;
     public string porientation = "y";
     public int pnumber = 1;
-
+    private bool won = false;
     //can be rotated, moved
     public bool finished = false;
     //rotate if true
@@ -346,7 +347,14 @@ public class maze : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        for (int i = 0; i < GetComponentInParent<RandoMazeBoard>().playerNum; i++)
+        {
+            if (GetComponentInParent<RandoMazeBoard>().playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().reachedGoal)
+            {
+                SceneManager.LoadScene(4);
+            }
+        }
+        
         if (pattern&&patternactivated)
         {
             rotatePattern();

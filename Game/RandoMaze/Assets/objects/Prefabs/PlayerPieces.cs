@@ -10,6 +10,7 @@ public class PlayerPieces: MonoBehaviour
     public TurnClass turnClass;
     public EndTurn endPlayerTurn;
 
+    public bool reachedGoal = false;
     //wallmovement system
     public maze maze;
     public bool finishedwall = false;
