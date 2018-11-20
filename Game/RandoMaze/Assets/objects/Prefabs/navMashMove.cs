@@ -8,6 +8,7 @@ public class navMashMove : MonoBehaviour
 {
 
     UnityEngine.AI.NavMeshAgent agent;
+    private Vector3 clickPos;
     public Vector3 targetPos;
     public bool moving2 = false;
 	// Use this for initialization
@@ -19,6 +20,8 @@ public class navMashMove : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+        //MousePosCheck();
+
         if (Input.GetMouseButton(0)&&moving2)
         {
             Plane plane = new Plane(Vector3.up, transform.position);
@@ -34,7 +37,6 @@ public class navMashMove : MonoBehaviour
         {
             agent.SetDestination(GetComponentInParent<Transform>().position);
         }
-
         
 	}
 
@@ -42,5 +44,20 @@ public class navMashMove : MonoBehaviour
     {
         agent.SetDestination(targetPos);
         //Debug.DrawLine(transform.position, targetPos, Color.black);
+    }
+
+    void MousePosCheck()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                clickPos = hit.point;
+            }
+            Debug.Log(targetPos);
+        }
     }
 }

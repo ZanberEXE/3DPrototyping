@@ -302,6 +302,8 @@ public class maze : MonoBehaviour
             surfaces[i].BuildNavMesh();
         }
         list.Clear();
+
+        GameObject.FindGameObjectWithTag("InputWall").GetComponent<Transform>().transform.position = new Vector3(20, 0, 5);
         GameObject.Find("UI").GetComponent<EndTurn>().buttonPressed = false;
         finished = true;
     }
@@ -330,6 +332,8 @@ public class maze : MonoBehaviour
     void Start () {
         
         list = new List<GameObject>(GameObject.FindGameObjectsWithTag("Wall"));
+        GameObject.FindGameObjectWithTag("InputWall").GetComponent<Transform>().transform.position = new Vector3(20, 0, 5);
+
         //list.Add(GameObject.FindGameObjectWithTag("InputWall"));
         while (list.Count > 0)
         {
