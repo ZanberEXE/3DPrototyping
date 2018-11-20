@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
-public class maze : MonoBehaviour {
+public class maze : MonoBehaviour
+{
 
 
     //14 ecken 6 schätze
@@ -18,14 +19,16 @@ public class maze : MonoBehaviour {
     public Vector3 moveto;
     GameObject usable;
     //Position Array for movable Walls
-    public int[,] positionArr = new int[,] {  
+    public int[,] positionArr = new int[,] 
+    {  
         { 0, 1, 0, 1, 0, 1, 0 },
         { 1, 1, 1, 1, 1, 1, 1 },
         { 0, 1, 0, 1, 0, 1, 0 },
         { 1, 1, 1, 1, 1, 1, 1 },
         { 0, 1, 0, 1, 0, 1, 0 },
         { 1, 1, 1, 1, 1, 1, 1 },
-        { 0, 1, 0, 1, 0, 1, 0 } };
+        { 0, 1, 0, 1, 0, 1, 0 }
+    };
     //Size of Walls
     private int posSteps = 3;
     //Start Position
@@ -245,7 +248,8 @@ public class maze : MonoBehaviour {
         range = Vector3.Distance(new Vector3(0, 0, 0), moveleft -= movement * speed * Time.deltaTime);
         moveto = movement * speed * Time.deltaTime;
 
-        if (range>Vector3.Distance(new Vector3(0,0,0),moveto)) {
+        if (range>Vector3.Distance(new Vector3(0,0,0),moveto))
+        {
             for (int i = 0; i < walls.Count; i++)
             {
                 walls[i].transform.position += moveto;
