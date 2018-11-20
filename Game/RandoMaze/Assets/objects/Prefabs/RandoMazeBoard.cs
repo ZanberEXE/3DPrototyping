@@ -20,8 +20,8 @@ public class RandoMazeBoard : MonoBehaviour {
     public GameObject playerPiecePrefab;
 
     //temp PlayerNum Solution
-    const int playerIndex = 2;
-    const int removeNum = 0;
+    const int playerIndex = 1;
+    const int removeNum = 2;
     
     public int playerNum = 4;
     
