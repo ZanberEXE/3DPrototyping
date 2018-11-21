@@ -54,6 +54,7 @@ public class CollectTreasures : MonoBehaviour
                     {
                         GetComponentInParent<PlayerPieces>().treasures.RemoveAt(0);
                         turn.buttonPressed = true;
+                        walked = false;
                     }
                 }
             }

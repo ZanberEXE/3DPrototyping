@@ -11,6 +11,8 @@ TagManager:
   - goal
   - card
   - playernum
+  - UI
+  - winnerTag
   layers:
   - Default
   - TransparentFX

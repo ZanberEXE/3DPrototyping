@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class maze : MonoBehaviour
 {
@@ -14,7 +16,8 @@ public class maze : MonoBehaviour
     //List for found movable Walls
     public List<GameObject> list;
     //public List<Vector3> targetWalls;
-    
+    private string winner = " hat gewonnen";
+    public GameObject winnscreen;
     public List<NavMeshSurface> surfaces;
     public Vector3 moveto;
     GameObject usable;
@@ -337,12 +340,12 @@ public class maze : MonoBehaviour
         //list.Add(GameObject.FindGameObjectWithTag("InputWall"));
         while (list.Count > 0)
         {
-            removePos = Random.Range(0, list.Count - 1);
+            removePos = UnityEngine.Random.Range(0, list.Count - 1);
             nextPos = firstOne(positionArr);
             //Debug.Log(nextPos);
 
             list[removePos].transform.position = new Vector3(nextPos.x * posSteps + startPosX, 0f, nextPos.y * -posSteps + startPosZ);
-            list[removePos].transform.rotation = Quaternion.AngleAxis(Random.Range(1, 4) * 90, Vector3.up);
+            list[removePos].transform.rotation = Quaternion.AngleAxis(UnityEngine.Random.Range(1, 4) * 90, Vector3.up);
             list.RemoveAt(removePos);
             nextPos = Vector3.zero;
             
@@ -359,7 +362,12 @@ public class maze : MonoBehaviour
         {
             if (GetComponentInParent<RandoMazeBoard>().playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().reachedGoal)
             {
-                SceneManager.LoadScene(4);
+                foreach (GameObject UIElement in GameObject.FindGameObjectsWithTag("UI"))
+                {
+                    UIElement.SetActive(false);
+                }
+                winnscreen.transform.FindChild("Panel").transform.FindChild("Text").GetComponent<Text>().text = Convert.ToString(GetComponentInParent<RandoMazeBoard>().playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().name+winner);
+                winnscreen.SetActive(true);
             }
         }
         
