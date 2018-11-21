@@ -5,9 +5,11 @@ using UnityEngine;
 public class CollectTreasures : MonoBehaviour
 {
     
-    GameObject trausureName;
-    public EndTurn turn;
     
+    public EndTurn turn;
+    public bool walkingIntoTreasure = false;
+    public bool walked = false;
+    public float distanceToMiddle;
 	// Use this for initialization
 	void Start ()
     {
@@ -19,31 +21,42 @@ public class CollectTreasures : MonoBehaviour
 		
 	}
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        //treasure.CheckID(treasureID);
-
-        if (other.tag != "goal")
+        if (GetComponentInParent<PlayerPieces>().treasures.Count != 0)
         {
-            trausureName = GetComponentInParent<PlayerPieces>().treasures[0];
-
-            if (other.gameObject == trausureName)
+            if (other.gameObject == GetComponentInParent<PlayerPieces>().treasures[0])
             {
-                //treasure.CheckID(treasureID);
-                //if (treasureID == playerTreasureID)
-                //{
-                //    other.gameObject.SetActive(false);
-                //}
-
-                turn.buttonPressed = true;
-
-                //other.gameObject.SetActive(false);
-                Debug.Log(trausureName);
+                distanceToMiddle = Vector2.Distance(new Vector2(other.bounds.center.x, other.bounds.center.z), new Vector2(transform.position.x, transform.position.z));
+                if (other.tag == "goal")
+                {
+                    GetComponentInParent<PlayerPieces>().reachedGoal = true;
+                }else if (other.tag == "treasure")
+                {
+                    if (!walked)
+                    {
+                        walkingIntoTreasure = true;
+                        walked = true;
+                    }
+                    if (walkingIntoTreasure)
+                    {
+                        if ((distanceToMiddle*Mathf.Sign(distanceToMiddle)) > 0.2f)
+                        {
+                            GetComponentInParent<navMashMove>().targetPos = other.GetComponent<BoxCollider>().bounds.center;
+                            GetComponentInParent<navMashMove>().Move();
+                        }
+                        else
+                        {
+                            walkingIntoTreasure = false;
+                        }
+                    }
+                    else
+                    {
+                        GetComponentInParent<PlayerPieces>().treasures.RemoveAt(0);
+                        turn.buttonPressed = true;
+                    }
+                }
             }
-        }
-        else if(GetComponentInParent<PlayerPieces>().treasures[0].tag=="goal")
-        {
-            GetComponentInParent<PlayerPieces>().reachedGoal = true; 
         }
     }
 }

@@ -36,11 +36,12 @@ public class navMashMove : MonoBehaviour
         }else if (!moving2)
         {
             agent.SetDestination(GetComponentInParent<Transform>().position);
+            targetPos = GetComponentInParent<Transform>().transform.position;
         }
         
 	}
 
-    void Move()
+    public void Move()
     {
         agent.SetDestination(targetPos);
         //Debug.DrawLine(transform.position, targetPos, Color.black);

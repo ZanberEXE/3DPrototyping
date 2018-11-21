@@ -61,6 +61,10 @@ public class RandoMazeBoard : MonoBehaviour {
                 }
             }
             giveCards = false;
+            for (int i = 0; i < playerNum; i++)
+            {
+                playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().hasTreasures = true;
+            }
         }
     }
 
