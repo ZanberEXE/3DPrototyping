@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114848415530363004}
   - component: {fileID: 114131437553737122}
   m_Layer: 0
-  m_Name: GameObjectFixed
+  m_Name: GameObject
   m_TagString: FixedWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -33,7 +33,7 @@ public class navMashMove : MonoBehaviour
                 targetPos = ray.GetPoint(point);
             }
             Move();
-        }else if (!moving2)
+        }else if (!moving2&&agent.isActiveAndEnabled)
         {
             agent.SetDestination(GetComponentInParent<Transform>().position);
             targetPos = GetComponentInParent<Transform>().transform.position;

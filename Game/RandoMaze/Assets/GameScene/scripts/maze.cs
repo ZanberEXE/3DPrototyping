@@ -354,6 +354,10 @@ public class maze : MonoBehaviour
         {
             surfaces[i].BuildNavMesh();
         }
+        for (int i = 0; i < 4; i++)
+        {
+            GetComponentInParent<RandoMazeBoard>().playersGroup[i].playerGameObject.GetComponent<NavMeshAgent>().enabled = true;
+        }
     }
 	
 	// Update is called once per frame
