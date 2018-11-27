@@ -42,6 +42,12 @@ public class maze : MonoBehaviour
     private Vector3 movement;
     private Vector2 nextPos;
     private int moveValue;
+    //rot speed of walls
+    public float rotSpeed = 5f;
+    public float rotLeft;
+    public float rotFor;
+    public bool rotating = false;
+    public bool buttonsDisabled = false;
     //speed of walls
     private float speed=0.5f;
     private Vector3 moveleft;
@@ -138,13 +144,31 @@ public class maze : MonoBehaviour
         }
     }
 
+    private void rotateAnim(GameObject gameObject)
+    {
+        rotFor = rotSpeed * Time.deltaTime;
+        if (rotLeft > rotFor)
+        {
+            rotLeft -= rotFor;
+            gameObject.transform.Rotate(0,rotFor,0);
+        }
+        else
+        {
+            gameObject.transform.rotation = Quaternion.Euler(0, Mathf.Round(gameObject.transform.rotation.eulerAngles.y/90)*90, 0);
+            list.RemoveAt(0);
+            rotating = false;
+        }
+    }
     //rotate the free wall
     private void rotateInputWall()
     {
-        list.Add(GameObject.FindGameObjectWithTag("InputWall"));
-        list[0].transform.rotation *= Quaternion.Euler(0, 90, 0);
-        list.RemoveAt(0);
-        rotate = false;
+        if (!rotating)
+        {
+            list.Add(GameObject.FindGameObjectWithTag("InputWall"));
+            rotLeft = 90;
+            rotating = true;
+            rotate = false;
+        }
     }
 
     //Position InputWall for pushing the Row/Col
@@ -373,6 +397,16 @@ public class maze : MonoBehaviour
                 winnscreen.transform.FindChild("Panel").transform.FindChild("Text").GetComponent<Text>().text = Convert.ToString(GetComponentInParent<RandoMazeBoard>().playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().name+winner);
                 winnscreen.SetActive(true);
             }
+        }
+        if (rotating&&rotLeft!=0)
+        {
+            buttonsDisabled = true;
+            rotateAnim(list[0]);
+        }
+        else
+        {
+            buttonsDisabled = false;
+            rotating = false;
         }
         
         if (pattern&&patternactivated)
