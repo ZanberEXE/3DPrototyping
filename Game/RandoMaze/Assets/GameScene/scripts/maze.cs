@@ -71,6 +71,10 @@ public class maze : MonoBehaviour
     
     //move inputblock and insert
     public bool startMove = false;
+    public bool moving = false;
+    //last button
+    public List<GameObject> buttons;
+    public GameObject button;
     //input parameters
     public string orientation = "y";
     public string plusOrMinus = "+";
@@ -224,6 +228,32 @@ public class maze : MonoBehaviour
         }
     }
 
+    //saves last moved row/col
+    void lastbutton()
+    {
+        if (orientation == "x")
+        {
+            if (plusOrMinus=="+")
+            {
+                button = GameObject.Find(Convert.ToString("R" + number));
+            }
+            else if(plusOrMinus=="-")
+            {
+                button = GameObject.Find(Convert.ToString("L" + number));
+            }
+        }else if (orientation == "y")
+        {
+            if (plusOrMinus == "+")
+            {
+                button = GameObject.Find(Convert.ToString("U" + number));
+            }
+            else if (plusOrMinus == "-")
+            {
+                button = GameObject.Find(Convert.ToString("O" + number));
+            }
+        }
+    }
+
     //Push Row/Col and make new InputWall
     public void moveTo()
     {
@@ -290,7 +320,8 @@ public class maze : MonoBehaviour
                 moveleft = movement;
             }
         }
-        
+        moving = true;
+        lastbutton();
         //add disable Button
     }
 
@@ -355,7 +386,7 @@ public class maze : MonoBehaviour
             surfaces[i].BuildNavMesh();
         }
         list.Clear();
-
+        moving = false;
         GameObject.FindGameObjectWithTag("InputWall").GetComponent<Transform>().transform.position = new Vector3(20, 0, 5);
         GameObject.Find("UI").GetComponent<EndTurn>().buttonPressed = false;
         finished = true;
@@ -383,7 +414,7 @@ public class maze : MonoBehaviour
     }
     // Use this for initialization
     void Start () {
-        
+        buttons = new List<GameObject>(GameObject.FindGameObjectsWithTag("button"));
         list = new List<GameObject>(GameObject.FindGameObjectsWithTag("Wall"));
         GameObject.FindGameObjectWithTag("InputWall").GetComponent<Transform>().transform.position = new Vector3(20, 0, 5);
 
@@ -441,7 +472,30 @@ public class maze : MonoBehaviour
             buttonsDisabled = false;
             rotating = false;
         }
-        
+        if (moving)
+        {
+            buttonsDisabled = true;
+        }
+        else if(!rotating)
+        {
+            buttonsDisabled = false;
+        }
+        if (buttonsDisabled)
+        {
+            for (int i = 0; i < buttons.Count; i++)
+            {
+                buttons[i].SetActive(false);
+            }
+        }else
+        {
+            for (int i = 0; i < buttons.Count; i++)
+            {
+                if (buttons[i] != button)
+                {
+                    buttons[i].SetActive(true);
+                }
+            }
+        }
         if (pattern&&patternactivated)
         {
             rotatePattern();
