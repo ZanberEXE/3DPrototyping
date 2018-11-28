@@ -9756,7 +9756,7 @@ MonoBehaviour:
   - {fileID: 1765333245}
   - {fileID: 54621367}
   moveto: {x: 0, y: 0, z: 0}
-  rotSpeed: 50
+  rotSpeed: 90
   rotLeft: 0
   rotFor: 0
   rotating: 0
