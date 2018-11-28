@@ -101,9 +101,12 @@ public class maze : MonoBehaviour
             {
                 if (gameObject.transform.position.z == zRows)
                 {
-                    gameObject.transform.rotation *= Quaternion.Euler(0, 90, 0);
+                    list.Add(gameObject);
+                    
                 }
             }
+            rotLeft = 90;
+            rotating = true;
         }
         else if (porientation == "y")
         {
@@ -111,9 +114,11 @@ public class maze : MonoBehaviour
             {
                 if (gameObject.transform.position.x == zRows * -1)
                 {
-                    gameObject.transform.rotation *= Quaternion.Euler(0, 90, 0);
+                    list.Add(gameObject);
                 }
             }
+            rotLeft = 90;
+            rotating = true;
         }
         for (int i = 0; i < surfaces.Count; i++)
         {
@@ -144,6 +149,27 @@ public class maze : MonoBehaviour
         }
     }
 
+    private void rotatePatternAnim()
+    {
+        rotFor = rotSpeed * Time.deltaTime;
+        if (rotLeft > rotFor)
+        {
+            rotLeft -= rotFor;
+            for (int i = 0; i < list.Count; i++)
+            {
+                list[i].transform.Rotate(0, rotFor, 0);
+            }
+        }
+        else
+        {
+            for (int i = 0; i < list.Count; i++)
+            {
+                list[i].transform.rotation = Quaternion.Euler(0, Mathf.Round(list[i].transform.rotation.eulerAngles.y / 90) * 90, 0);
+            }
+            list.Clear();
+            rotating = false;
+        }
+    }
     private void rotateAnim(GameObject gameObject)
     {
         rotFor = rotSpeed * Time.deltaTime;
@@ -394,14 +420,21 @@ public class maze : MonoBehaviour
                 {
                     UIElement.SetActive(false);
                 }
-                winnscreen.transform.FindChild("Panel").transform.FindChild("Text").GetComponent<Text>().text = Convert.ToString(GetComponentInParent<RandoMazeBoard>().playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().name+winner);
+                winnscreen.transform.Find("Panel").transform.Find("Text").GetComponent<Text>().text = Convert.ToString(GetComponentInParent<RandoMazeBoard>().playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().name+winner);
                 winnscreen.SetActive(true);
             }
         }
         if (rotating&&rotLeft!=0)
         {
             buttonsDisabled = true;
-            rotateAnim(list[0]);
+            if (list.Count == 1)
+            {
+                rotateAnim(list[0]);
+            }
+            else
+            {
+                rotatePatternAnim();
+            }
         }
         else
         {
