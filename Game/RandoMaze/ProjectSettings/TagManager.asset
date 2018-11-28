@@ -13,6 +13,7 @@ TagManager:
   - playernum
   - UI
   - winnerTag
+  - button
   layers:
   - Default
   - TransparentFX
