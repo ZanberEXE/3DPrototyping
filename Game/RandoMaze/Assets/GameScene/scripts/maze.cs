@@ -15,7 +15,6 @@ public class maze : MonoBehaviour
     //6 3 ecken mit schatz
     //List for found movable Walls
     public List<GameObject> list;
-    //public List<Vector3> targetWalls;
     private string winner = " hat gewonnen";
     public GameObject winnscreen;
     public List<NavMeshSurface> surfaces;
@@ -49,12 +48,16 @@ public class maze : MonoBehaviour
     public bool rotating = false;
     public bool buttonsDisabled = false;
     //speed of walls
-    private float speed=0.5f;
+    private float speed = 0.5f;
     private Vector3 moveleft;
     private float range;
     //for treasures
     private GameObject mazeSystem;
     public AudioSource rotationpattern;
+    public Vector3 player1Treasures;
+    public Vector3 player2Treasures;
+    public Vector3 player3Treasures;
+    public Vector3 player4Treasures;
 
     #region for options
     //is the pattern activated
