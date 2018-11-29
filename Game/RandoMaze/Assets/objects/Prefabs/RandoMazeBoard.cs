@@ -17,6 +17,8 @@ public class RandoMazeBoard : MonoBehaviour {
     public List<GameObject> treasure;
     private int randomRemove;
     private int nmbCards;
+    public GameObject player3Bild;
+    public GameObject player4Bild;
     //public PlayerPieces playerPieces = new PlayerPieces();
     //public List<PlayerPieces> playerPieces;
 
@@ -63,6 +65,7 @@ public class RandoMazeBoard : MonoBehaviour {
                     treasure.RemoveAt(randomRemove);
                 }
             }
+            treasuresForPlayer = playersGroup[0].playerGameObject.GetComponent<PlayerPieces>().treasures.Count;
             giveCards = false;
             for (int i = 0; i < playerNum; i++)
             {
@@ -81,14 +84,14 @@ public class RandoMazeBoard : MonoBehaviour {
                 case 2:
                     playersGroup[3].playerGameObject.SetActive(false);
                     playersGroup[2].playerGameObject.SetActive(false);
-                    treasuresForPlayer = 12;
+                    player3Bild.SetActive(false);
+                    player4Bild.SetActive(false);
                     break;
                 case 3:
                     playersGroup[3].playerGameObject.SetActive(false);
-                    treasuresForPlayer = 8;
+                    player4Bild.SetActive(false);
                     break;
                 default:
-                    treasuresForPlayer = 6;
                     break;
             }
         }

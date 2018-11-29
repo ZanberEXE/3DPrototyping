@@ -52,7 +52,8 @@ public class maze : MonoBehaviour
     private float speed=0.5f;
     private Vector3 moveleft;
     private float range;
-    //SFX
+    //for treasures
+    private GameObject mazeSystem;
     public AudioSource rotationpattern;
 
     #region for options
@@ -438,6 +439,7 @@ public class maze : MonoBehaviour
         {
             surfaces[i].BuildNavMesh();
         }
+        mazeSystem = GameObject.Find("Maze");
         for (int i = 0; i < 4; i++)
         {
             GetComponentInParent<RandoMazeBoard>().playersGroup[i].playerGameObject.GetComponent<NavMeshAgent>().enabled = true;
@@ -456,6 +458,17 @@ public class maze : MonoBehaviour
                 }
                 winnscreen.transform.Find("Panel").transform.Find("Text").GetComponent<Text>().text = Convert.ToString(GetComponentInParent<RandoMazeBoard>().playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().name+winner);
                 winnscreen.SetActive(true);
+            }
+        }
+        for (int i = 0; i < mazeSystem.GetComponent<RandoMazeBoard>().playerNum; i++)
+        {
+            if (mazeSystem.GetComponent<RandoMazeBoard>().playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().treasures.Count != 0)
+            {
+                if (mazeSystem.GetComponent<RandoMazeBoard>().playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().treasures[0] != mazeSystem.GetComponent<RandoMazeBoard>().playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().goal)
+                {
+                    int intern = i + 1;
+                    mazeSystem.GetComponent<RandoMazeBoard>().UiPlayer.transform.Find(Convert.ToString("Spieler " + intern + " Bild")).transform.Find(Convert.ToString("Spieler " + intern)).GetComponent<Text>().text = Convert.ToString(mazeSystem.GetComponent<RandoMazeBoard>().treasuresForPlayer - mazeSystem.GetComponent<RandoMazeBoard>().playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().treasures.Count + "/" + mazeSystem.GetComponent<RandoMazeBoard>().treasuresForPlayer);
+                }
             }
         }
         if (rotating&&rotLeft!=0)
