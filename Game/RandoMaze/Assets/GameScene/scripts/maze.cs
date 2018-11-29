@@ -52,6 +52,11 @@ public class maze : MonoBehaviour
     private float speed=0.5f;
     private Vector3 moveleft;
     private float range;
+    //SFX
+    public AudioSource rotationpattern;
+    public AudioSource fairyDust;
+    private bool fairyPlayed = false;
+    private bool patternPlayed = false;
 
     #region for options
     //is the pattern activated
@@ -98,7 +103,7 @@ public class maze : MonoBehaviour
                 break;
             default:
                 break;
-        }
+        }        
         if (porientation == "x")
         {
             foreach (GameObject gameObject in GameObject.FindGameObjectsWithTag("Wall"))
@@ -155,6 +160,7 @@ public class maze : MonoBehaviour
 
     private void rotatePatternAnim()
     {
+        PlaySFX();
         rotFor = rotSpeed * Time.deltaTime;
         if (rotLeft > rotFor)
         {
@@ -520,4 +526,21 @@ public class maze : MonoBehaviour
             
         }
 	}
+
+    private void PlaySFX()
+    {
+        if (patternPlayed == false)
+        {
+            rotationpattern.Play();
+            patternPlayed = true;
+        }
+        if (patternPlayed == true && fairyPlayed == false)
+        {
+            fairyDust.Play();
+            fairyPlayed = true;
+        }
+
+        patternPlayed = false;
+        fairyPlayed = false;
+    }
 }
