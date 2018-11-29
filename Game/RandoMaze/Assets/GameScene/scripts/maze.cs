@@ -54,10 +54,7 @@ public class maze : MonoBehaviour
     //for treasures
     private GameObject mazeSystem;
     public AudioSource rotationpattern;
-    public Vector3 player1Treasures;
-    public Vector3 player2Treasures;
-    public Vector3 player3Treasures;
-    public Vector3 player4Treasures;
+    public List<Vector3> playerTreasurePos;
 
     #region for options
     //is the pattern activated

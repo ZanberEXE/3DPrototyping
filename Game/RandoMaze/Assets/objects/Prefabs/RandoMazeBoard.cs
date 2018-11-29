@@ -70,6 +70,10 @@ public class RandoMazeBoard : MonoBehaviour {
             for (int i = 0; i < playerNum; i++)
             {
                 playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().hasTreasures = true;
+                for (int k = 0; k < playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().treasures.Count; k++)
+                {
+                    playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().treasures[k].GetComponent<TreasureCard>().TreasureCardObj.transform.position = this.GetComponentInParent<maze>().playerTreasurePos[i]+this.UiPlayer.transform.position;
+                }
             }
         }
     }
