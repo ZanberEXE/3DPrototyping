@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Credits : MonoBehaviour {
 
+    public AudioSource click;
     public void Exit()
     {
+        click.Play();
         SceneManager.LoadScene(0);
     }
 }
