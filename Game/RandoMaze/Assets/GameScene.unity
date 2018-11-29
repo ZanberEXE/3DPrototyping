@@ -428,6 +428,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114343779580710142, guid: 6868e49dbe696ad409d680f002dbbf86,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 224848096517619452, guid: 6868e49dbe696ad409d680f002dbbf86,
         type: 2}
       propertyPath: m_RootOrder
@@ -1271,6 +1276,31 @@ Prefab:
         type: 2}
       propertyPath: m_Type
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114343779580710142, guid: 6868e49dbe696ad409d680f002dbbf86,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114343779580710142, guid: 6868e49dbe696ad409d680f002dbbf86,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114343779580710142, guid: 6868e49dbe696ad409d680f002dbbf86,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 342436716}
+    - target: {fileID: 114343779580710142, guid: 6868e49dbe696ad409d680f002dbbf86,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 114343779580710142, guid: 6868e49dbe696ad409d680f002dbbf86,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6868e49dbe696ad409d680f002dbbf86, type: 2}
@@ -9702,6 +9732,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 342436716}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &841462329
@@ -10560,7 +10601,6 @@ MonoBehaviour:
   rotating: 0
   buttonsDisabled: 0
   rotationpattern: {fileID: 36165893}
-  fairyDust: {fileID: 1896190791}
   patternactivated: 1
   rotate: 0
   pattern: 0
