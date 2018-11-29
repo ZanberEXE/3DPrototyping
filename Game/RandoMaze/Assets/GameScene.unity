@@ -8789,6 +8789,17 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 31295326}
   m_Script: {fileID: 11500000, guid: 3e99cb0863f697e4687622fa05cdfa8d, type: 3}
+--- !u!114 &753722135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 753722132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438e3af67a3c474a9feaacf9a51ce1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &754891682
 GameObject:
   m_ObjectHideFlags: 0
@@ -9443,7 +9454,7 @@ GameObject:
   - component: {fileID: 841462329}
   - component: {fileID: 841462328}
   m_Layer: 0
-  m_Name: Pause
+  m_Name: Home
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9507,20 +9518,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1685103431}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 753722132}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 753722135}
+        m_MethodName: ReturnToMainMenu
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9550,7 +9550,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 784afabc769d74e4da9f1e7191f4ad45, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c3c31e5aa8e0aab49a84740b521f3e0b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
