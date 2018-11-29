@@ -391,7 +391,7 @@ public class maze : MonoBehaviour
         }
         list.Clear();
         moving = false;
-        GameObject.FindGameObjectWithTag("InputWall").GetComponent<Transform>().transform.position = new Vector3(20, 0, 5);
+        GameObject.FindGameObjectWithTag("InputWall").GetComponent<Transform>().transform.position = new Vector3(18, 0, -3);
         GameObject.Find("UI").GetComponent<EndTurn>().buttonPressed = false;
         finished = true;
     }
@@ -420,7 +420,7 @@ public class maze : MonoBehaviour
     void Start () {
         buttons = new List<GameObject>(GameObject.FindGameObjectsWithTag("button"));
         list = new List<GameObject>(GameObject.FindGameObjectsWithTag("Wall"));
-        GameObject.FindGameObjectWithTag("InputWall").GetComponent<Transform>().transform.position = new Vector3(20, 0, 5);
+        GameObject.FindGameObjectWithTag("InputWall").GetComponent<Transform>().transform.position = new Vector3(18, 0, -3);
 
         //list.Add(GameObject.FindGameObjectWithTag("InputWall"));
         while (list.Count > 0)
