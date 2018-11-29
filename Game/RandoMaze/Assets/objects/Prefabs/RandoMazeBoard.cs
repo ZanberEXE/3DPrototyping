@@ -1,4 +1,4 @@
-﻿ using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +8,10 @@ public class RandoMazeBoard : MonoBehaviour {
 
     //List of Players
     public List<TurnClass> playersGroup;
-    
+
+    //treasures
+    public int treasuresForPlayer;
+    public GameObject UiPlayer;
 
     public bool giveCards = false;
     public List<GameObject> treasure;
@@ -78,11 +81,14 @@ public class RandoMazeBoard : MonoBehaviour {
                 case 2:
                     playersGroup[3].playerGameObject.SetActive(false);
                     playersGroup[2].playerGameObject.SetActive(false);
+                    treasuresForPlayer = 12;
                     break;
                 case 3:
                     playersGroup[3].playerGameObject.SetActive(false);
+                    treasuresForPlayer = 8;
                     break;
                 default:
+                    treasuresForPlayer = 6;
                     break;
             }
         }

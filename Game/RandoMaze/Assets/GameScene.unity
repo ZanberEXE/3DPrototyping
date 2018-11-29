@@ -10462,6 +10462,8 @@ MonoBehaviour:
   - playerGameObject: {fileID: 1375451359}
     isTurn: 0
     wasTurnPrev: 0
+  treasuresForPlayer: 0
+  UiPlayer: {fileID: 105764192}
   giveCards: 0
   treasure: []
   playerPiecePrefab: {fileID: 1880545571862692, guid: f3bd81617049fd54681ed9fbf265eee3,
