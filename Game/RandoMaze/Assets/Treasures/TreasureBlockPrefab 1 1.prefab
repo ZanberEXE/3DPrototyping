@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23656055406704086}
   - component: {fileID: 136266142666123444}
   m_Layer: 0
-  m_Name: Treasure Object
+  m_Name: TreasureBlockPrefab 1 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

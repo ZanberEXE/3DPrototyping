@@ -3937,6 +3937,16 @@ Prefab:
       propertyPath: m_Name
       value: Spieler 1
       objectReference: {fileID: 0}
+    - target: {fileID: 195139008452611682, guid: fa58ce0d1c3d8d14ea21303a4fc7f431,
+        type: 2}
+      propertyPath: m_Height
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 136307570031357382, guid: fa58ce0d1c3d8d14ea21303a4fc7f431,
+        type: 2}
+      propertyPath: m_Height
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54046692982484912, guid: fa58ce0d1c3d8d14ea21303a4fc7f431, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: fa58ce0d1c3d8d14ea21303a4fc7f431, type: 2}
@@ -8119,7 +8129,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 610310445}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1.22, z: 0}
+  m_LocalPosition: {x: 0, y: 0.65, z: 0}
   m_LocalScale: {x: 1.5000019, y: 1, z: 1.5000019}
   m_Children:
   - {fileID: 701287757}
@@ -8553,6 +8563,16 @@ Prefab:
     - target: {fileID: 1895113974296796, guid: c8757e2975a0cc94d8696755479bdf0d, type: 2}
       propertyPath: m_Name
       value: Spieler 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 195468087754119600, guid: c8757e2975a0cc94d8696755479bdf0d,
+        type: 2}
+      propertyPath: m_Height
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 136718633762533146, guid: c8757e2975a0cc94d8696755479bdf0d,
+        type: 2}
+      propertyPath: m_Height
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54283387470002028, guid: c8757e2975a0cc94d8696755479bdf0d, type: 2}
@@ -10215,6 +10235,16 @@ Prefab:
     - target: {fileID: 1320622100974764, guid: 7de47a87064bb22439e7aebc6068f94c, type: 2}
       propertyPath: m_Name
       value: Spieler 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195546155583861370, guid: 7de47a87064bb22439e7aebc6068f94c,
+        type: 2}
+      propertyPath: m_Height
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 136828938483477830, guid: 7de47a87064bb22439e7aebc6068f94c,
+        type: 2}
+      propertyPath: m_Height
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54547809461911692, guid: 7de47a87064bb22439e7aebc6068f94c, type: 2}
@@ -17566,7 +17596,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4256434915790914, guid: 5d4b0e163f9cfa74a813e4c3d24e981c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.468
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4256434915790914, guid: 5d4b0e163f9cfa74a813e4c3d24e981c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -17599,6 +17629,11 @@ Prefab:
     - target: {fileID: 1413352961363884, guid: 5d4b0e163f9cfa74a813e4c3d24e981c, type: 2}
       propertyPath: m_Name
       value: golden goose
+      objectReference: {fileID: 0}
+    - target: {fileID: 136266142666123444, guid: 5d4b0e163f9cfa74a813e4c3d24e981c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d4b0e163f9cfa74a813e4c3d24e981c, type: 2}
@@ -22019,6 +22054,16 @@ Prefab:
     - target: {fileID: 1518927955286130, guid: 182b3f92e9db8f94f9dbf1f4c8bc13b7, type: 2}
       propertyPath: m_Name
       value: Spieler 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 195768130299053182, guid: 182b3f92e9db8f94f9dbf1f4c8bc13b7,
+        type: 2}
+      propertyPath: m_Height
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 136649942583044752, guid: 182b3f92e9db8f94f9dbf1f4c8bc13b7,
+        type: 2}
+      propertyPath: m_Height
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54372848596507054, guid: 182b3f92e9db8f94f9dbf1f4c8bc13b7, type: 2}
