@@ -48,10 +48,13 @@ public class CollectTreasures : MonoBehaviour
                         else
                         {
                             walkingIntoTreasure = false;
+                            
                         }
                     }
                     else
                     {
+                        GetComponentInParent<PlayerPieces>().treasures[0].GetComponentInParent<TreasureCard>().TreasureCardObj.SetActive(false);
+                        GetComponentInParent<PlayerPieces>().treasures[0].SetActive(false);
                         GetComponentInParent<PlayerPieces>().treasures.RemoveAt(0);
                         turn.buttonPressed = true;
                         walked = false;
