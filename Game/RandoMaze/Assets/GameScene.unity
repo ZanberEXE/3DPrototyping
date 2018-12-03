@@ -185,7 +185,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &10893430
@@ -1829,6 +1829,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 4369bd81f7dd3ed4e963480daedc06ea,
         type: 3}
+    - target: {fileID: 1223806015371296, guid: 6868e49dbe696ad409d680f002dbbf86, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6868e49dbe696ad409d680f002dbbf86, type: 2}
   m_IsPrefabAsset: 0
@@ -2259,7 +2263,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1001 &57754467
@@ -2477,7 +2481,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1001 &81201723
@@ -3433,7 +3437,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &132814323
@@ -4070,7 +4074,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &181536423 stripped
@@ -4278,6 +4282,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114538222696897792, guid: fa58ce0d1c3d8d14ea21303a4fc7f431,
+        type: 2}
+      propertyPath: treasures.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4713043065354668, guid: fa58ce0d1c3d8d14ea21303a4fc7f431, type: 2}
       propertyPath: m_LocalPosition.x
       value: 9
@@ -4385,7 +4394,17 @@ Prefab:
         type: 2}
       propertyPath: treasures.Array.data[0]
       value: 
-      objectReference: {fileID: 610310445}
+      objectReference: {fileID: 552649282}
+    - target: {fileID: 114538222696897792, guid: fa58ce0d1c3d8d14ea21303a4fc7f431,
+        type: 2}
+      propertyPath: treasures.Array.data[1]
+      value: 
+      objectReference: {fileID: 382535256}
+    - target: {fileID: 114538222696897792, guid: fa58ce0d1c3d8d14ea21303a4fc7f431,
+        type: 2}
+      propertyPath: treasures.Array.data[2]
+      value: 
+      objectReference: {fileID: 754891682}
     m_RemovedComponents:
     - {fileID: 54046692982484912, guid: fa58ce0d1c3d8d14ea21303a4fc7f431, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: fa58ce0d1c3d8d14ea21303a4fc7f431, type: 2}
@@ -4451,7 +4470,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &226561525
@@ -4775,7 +4794,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &277003087
@@ -5650,7 +5669,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &367992632 stripped
@@ -6049,7 +6068,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &402176871
@@ -6113,7 +6132,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &402176874
@@ -6405,7 +6424,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1001 &443315395
@@ -7338,7 +7357,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &480026843
@@ -8966,7 +8985,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &617487925 stripped
@@ -9035,7 +9054,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &623305124
@@ -9407,7 +9426,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &696906588
@@ -9569,7 +9588,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &705997086
@@ -9931,7 +9950,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &740561141
@@ -9995,7 +10014,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &740561144
@@ -10244,7 +10263,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &758100286
@@ -10496,7 +10515,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1001 &784445215
@@ -10681,6 +10700,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114407018328433396, guid: 7de47a87064bb22439e7aebc6068f94c,
+        type: 2}
+      propertyPath: treasures.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4591140871162822, guid: 7de47a87064bb22439e7aebc6068f94c, type: 2}
       propertyPath: m_LocalPosition.x
       value: -8.97
@@ -10779,6 +10803,16 @@ Prefab:
       propertyPath: m_Height
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 114407018328433396, guid: 7de47a87064bb22439e7aebc6068f94c,
+        type: 2}
+      propertyPath: treasures.Array.data[0]
+      value: 
+      objectReference: {fileID: 552649282}
+    - target: {fileID: 114407018328433396, guid: 7de47a87064bb22439e7aebc6068f94c,
+        type: 2}
+      propertyPath: treasures.Array.data[1]
+      value: 
+      objectReference: {fileID: 187419147}
     m_RemovedComponents:
     - {fileID: 54547809461911692, guid: 7de47a87064bb22439e7aebc6068f94c, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 7de47a87064bb22439e7aebc6068f94c, type: 2}
@@ -11125,7 +11159,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &854907064
@@ -11436,7 +11470,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &903008490
@@ -12590,7 +12624,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &1049850519
@@ -12810,7 +12844,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &1064985537
@@ -12936,7 +12970,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &1071676040
@@ -13098,7 +13132,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &1090817691 stripped
@@ -13357,7 +13391,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &1103841287
@@ -13774,7 +13808,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &1145294075
@@ -13838,7 +13872,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &1145294078
@@ -14129,7 +14163,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!4 &1169869957 stripped
@@ -14234,7 +14268,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &1179354457
@@ -14472,7 +14506,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &1186008820
@@ -14573,7 +14607,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1001 &1187472911
@@ -14816,7 +14850,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &1228377238
@@ -15390,7 +15424,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &1280176998
@@ -15919,9 +15953,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 921467487}
-        m_MethodName: startGame
-        m_Mode: 1
+      - m_Target: {fileID: 1966816829}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16372,7 +16406,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!4 &1379992178 stripped
@@ -16650,7 +16684,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &1401111513
@@ -17291,7 +17325,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1001 &1448264081
@@ -17381,7 +17415,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &1471834519
@@ -17900,7 +17934,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &1526349934
@@ -18153,7 +18187,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &1536122892
@@ -18619,7 +18653,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &1556227800
@@ -18719,7 +18753,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!4 &1558724479 stripped
@@ -18871,7 +18905,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!4 &1574804379 stripped
@@ -19348,7 +19382,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &1671770417
@@ -19574,7 +19608,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &1685653044
@@ -20480,7 +20514,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &1765333246
@@ -20946,7 +20980,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1001 &1810038339
@@ -22221,6 +22255,11 @@ Prefab:
     - {fileID: 136266142666123444, guid: 5d4b0e163f9cfa74a813e4c3d24e981c, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 5d4b0e163f9cfa74a813e4c3d24e981c, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1966816829 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1223806015371296, guid: 6868e49dbe696ad409d680f002dbbf86,
+    type: 2}
+  m_PrefabInternal: {fileID: 31295326}
 --- !u!4 &1973872415 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4714489006834598, guid: e13b5c057279ede498d701fe6bceb794,
@@ -22732,7 +22771,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1001 &2025014784
@@ -23380,7 +23419,7 @@ MonoBehaviour:
   m_OverrideTileSize: 1
   m_TileSize: 100
   m_OverrideVoxelSize: 1
-  m_VoxelSize: 0.03
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &2094535528
