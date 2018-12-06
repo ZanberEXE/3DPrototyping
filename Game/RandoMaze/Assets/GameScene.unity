@@ -2159,7 +2159,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f6ef7f34376bee244a24120c41c2aae6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d1b8614794f5207448f923bcf97c8ece, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8149,7 +8149,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 85b5f19a9b68b2a44835ce3af6d20d5a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9eb06779112569d4e802cca6b5ca8298, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9721,7 +9721,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 8e681d7d96be03b478f0f4414d2938fe,
+      objectReference: {fileID: 21300000, guid: 2de8547e40d72b146baec99596bdf893,
         type: 3}
     - target: {fileID: 4721745771200946, guid: 5d4b0e163f9cfa74a813e4c3d24e981c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -14575,7 +14575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.3679245, g: 0.22858678, b: 0.09198113, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -14584,12 +14584,12 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: a483ec9a5f1c4604fa45c7745b56c399, type: 3}
-    m_FontSize: 80
+    m_FontSize: 75
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 4
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -16113,7 +16113,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f6ef7f34376bee244a24120c41c2aae6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5c3510bcef75c85449df86fd0730abe4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19469,7 +19469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -22849,7 +22849,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4c0a3825eb1b37a47ae754a775ffb2f2,
+      objectReference: {fileID: 21300000, guid: 3ddf03866fb2fd6489d3c82ca808aaac,
         type: 3}
     - target: {fileID: 4721745771200946, guid: 5d4b0e163f9cfa74a813e4c3d24e981c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -24000,7 +24000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -24591,7 +24591,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f6ef7f34376bee244a24120c41c2aae6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d1b8614794f5207448f923bcf97c8ece, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
