@@ -121,6 +121,7 @@ MonoBehaviour:
     isTurn: 0
     wasTurnPrev: 0
   endPlayerTurn: {fileID: 0}
+  reachedGoal: 0
   maze: {fileID: 0}
   finishedwall: 0
   playernmb: 0
