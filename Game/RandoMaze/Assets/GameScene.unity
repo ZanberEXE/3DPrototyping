@@ -323,7 +323,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 80a7e9d3ec427c64297c5fcc16dfd141, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 070e508c9387b4f4db623a5eb7f0b81f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3182,7 +3182,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5267,7 +5267,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6265,7 +6265,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6574,7 +6574,7 @@ Prefab:
     - target: {fileID: 114713874007526590, guid: fb2430b069d42eb4c80569ebaf57de59,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Play
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114713874007526590, guid: fb2430b069d42eb4c80569ebaf57de59,
         type: 2}
@@ -7500,7 +7500,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7803,7 +7803,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8262,7 +8262,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11488,6 +11488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ccc169dddba3d4e937327419329d8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sliding: {fileID: 21607066}
 --- !u!114 &921467487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11612,12 +11613,12 @@ MonoBehaviour:
   rotFor: 0
   rotating: 0
   buttonsDisabled: 0
-  rotationpattern: {fileID: 36165893}
   playerTreasurePos:
   - {x: 607.2, y: 433, z: 0}
   - {x: -863, y: 433, z: 0}
   - {x: -863, y: -417.4, z: 0}
   - {x: 607.2, y: -417.4, z: 0}
+  rotationpattern: {fileID: 36165893}
   patternactivated: 1
   rotate: 0
   pattern: 0
@@ -13423,7 +13424,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14943,7 +14944,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15506,7 +15507,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20221,7 +20222,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21755,7 +21756,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

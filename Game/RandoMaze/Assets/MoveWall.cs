@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class MoveWall : MonoBehaviour {
+public class MoveWall : MonoBehaviour
+{
 
     ////rotate if true
     //public bool rotate = false;
@@ -15,6 +16,7 @@ public class MoveWall : MonoBehaviour {
     //public int number = 1;
     //can be rotated, moved
     //public bool finished = false;
+    public AudioSource sliding;
 
     public void pressMove()
     {
@@ -88,6 +90,7 @@ public class MoveWall : MonoBehaviour {
         if (!maze.FindObjectOfType<maze>().finished)
         {
             maze.FindObjectOfType<maze>().startMove = true;
+            sliding.Play();
         }
         //if(maze.FindObjectOfType<maze>().startMove == true)
         //{
