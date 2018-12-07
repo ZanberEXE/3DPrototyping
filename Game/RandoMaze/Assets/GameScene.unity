@@ -323,7 +323,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 80a7e9d3ec427c64297c5fcc16dfd141, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 070e508c9387b4f4db623a5eb7f0b81f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1566,7 +1566,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4c0a3825eb1b37a47ae754a775ffb2f2,
+      objectReference: {fileID: 21300000, guid: 3ddf03866fb2fd6489d3c82ca808aaac,
         type: 3}
     - target: {fileID: 114444414141818302, guid: 6868e49dbe696ad409d680f002dbbf86,
         type: 2}
@@ -1671,7 +1671,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 8e681d7d96be03b478f0f4414d2938fe,
+      objectReference: {fileID: 21300000, guid: 2de8547e40d72b146baec99596bdf893,
         type: 3}
     - target: {fileID: 114185112010045806, guid: 6868e49dbe696ad409d680f002dbbf86,
         type: 2}
@@ -2217,7 +2217,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f6ef7f34376bee244a24120c41c2aae6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d1b8614794f5207448f923bcf97c8ece, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3240,7 +3240,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4810,10 +4810,16 @@ Prefab:
       propertyPath: m_Acceleration
       value: 20
       objectReference: {fileID: 0}
-    - target: {fileID: 1119197113053090, guid: fa58ce0d1c3d8d14ea21303a4fc7f431, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 114538222696897792, guid: fa58ce0d1c3d8d14ea21303a4fc7f431,
+        type: 2}
+      propertyPath: spotlight
+      value: 
+      objectReference: {fileID: 1568130687}
+    - target: {fileID: 33965712742096330, guid: fa58ce0d1c3d8d14ea21303a4fc7f431,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 480309116adf94441929e740ec76ba72, type: 3}
     m_RemovedComponents:
     - {fileID: 54046692982484912, guid: fa58ce0d1c3d8d14ea21303a4fc7f431, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: fa58ce0d1c3d8d14ea21303a4fc7f431, type: 2}
@@ -6139,7 +6145,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7287,7 +7293,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7736,7 +7742,7 @@ Prefab:
     - target: {fileID: 114713874007526590, guid: fb2430b069d42eb4c80569ebaf57de59,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Play
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114713874007526590, guid: fb2430b069d42eb4c80569ebaf57de59,
         type: 2}
@@ -8865,7 +8871,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9168,7 +9174,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9664,7 +9670,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 85b5f19a9b68b2a44835ce3af6d20d5a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9eb06779112569d4e802cca6b5ca8298, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9777,7 +9783,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10538,10 +10544,16 @@ Prefab:
       propertyPath: m_Acceleration
       value: 20
       objectReference: {fileID: 0}
-    - target: {fileID: 1895113974296796, guid: c8757e2975a0cc94d8696755479bdf0d, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 114688533447309488, guid: c8757e2975a0cc94d8696755479bdf0d,
+        type: 2}
+      propertyPath: spotlight
+      value: 
+      objectReference: {fileID: 1445925035}
+    - target: {fileID: 33087725981951396, guid: c8757e2975a0cc94d8696755479bdf0d,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 480309116adf94441929e740ec76ba72, type: 3}
     m_RemovedComponents:
     - {fileID: 54283387470002028, guid: c8757e2975a0cc94d8696755479bdf0d, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: c8757e2975a0cc94d8696755479bdf0d, type: 2}
@@ -11700,7 +11712,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 8e681d7d96be03b478f0f4414d2938fe,
+      objectReference: {fileID: 21300000, guid: 2de8547e40d72b146baec99596bdf893,
         type: 3}
     - target: {fileID: 4721745771200946, guid: 5d4b0e163f9cfa74a813e4c3d24e981c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -13103,10 +13115,16 @@ Prefab:
       propertyPath: m_Acceleration
       value: 20
       objectReference: {fileID: 0}
-    - target: {fileID: 1320622100974764, guid: 7de47a87064bb22439e7aebc6068f94c, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 114407018328433396, guid: 7de47a87064bb22439e7aebc6068f94c,
+        type: 2}
+      propertyPath: spotlight
+      value: 
+      objectReference: {fileID: 1653158033}
+    - target: {fileID: 33504471537726490, guid: 7de47a87064bb22439e7aebc6068f94c,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 480309116adf94441929e740ec76ba72, type: 3}
     m_RemovedComponents:
     - {fileID: 54547809461911692, guid: 7de47a87064bb22439e7aebc6068f94c, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 7de47a87064bb22439e7aebc6068f94c, type: 2}
@@ -14251,6 +14269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ccc169dddba3d4e937327419329d8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sliding: {fileID: 21607066}
 --- !u!114 &921467487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14404,12 +14423,12 @@ MonoBehaviour:
   rotFor: 0
   rotating: 0
   buttonsDisabled: 0
-  rotationpattern: {fileID: 36165893}
   playerTreasurePos:
   - {x: 607.2, y: 433, z: 0}
   - {x: -863, y: 433, z: 0}
   - {x: -863, y: -417.4, z: 0}
   - {x: 607.2, y: -417.4, z: 0}
+  rotationpattern: {fileID: 36165893}
   patternactivated: 1
   rotate: 0
   pattern: 0
@@ -16501,7 +16520,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17994,7 +18013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.3679245, g: 0.22858678, b: 0.09198113, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -18003,12 +18022,12 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: a483ec9a5f1c4604fa45c7745b56c399, type: 3}
-    m_FontSize: 80
+    m_FontSize: 75
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 4
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -18570,7 +18589,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19218,7 +19237,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19900,7 +19919,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f6ef7f34376bee244a24120c41c2aae6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5c3510bcef75c85449df86fd0730abe4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -23939,7 +23958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -24831,7 +24850,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26758,7 +26777,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 21607066}
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -28115,7 +28134,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4c0a3825eb1b37a47ae754a775ffb2f2,
+      objectReference: {fileID: 21300000, guid: 3ddf03866fb2fd6489d3c82ca808aaac,
         type: 3}
     - target: {fileID: 4721745771200946, guid: 5d4b0e163f9cfa74a813e4c3d24e981c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -28251,10 +28270,16 @@ Prefab:
       propertyPath: m_Acceleration
       value: 20
       objectReference: {fileID: 0}
-    - target: {fileID: 1518927955286130, guid: 182b3f92e9db8f94f9dbf1f4c8bc13b7, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 114608126003739074, guid: 182b3f92e9db8f94f9dbf1f4c8bc13b7,
+        type: 2}
+      propertyPath: spotlight
+      value: 
+      objectReference: {fileID: 443869638}
+    - target: {fileID: 33699484929607110, guid: 182b3f92e9db8f94f9dbf1f4c8bc13b7,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 480309116adf94441929e740ec76ba72, type: 3}
     m_RemovedComponents:
     - {fileID: 54372848596507054, guid: 182b3f92e9db8f94f9dbf1f4c8bc13b7, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 182b3f92e9db8f94f9dbf1f4c8bc13b7, type: 2}
@@ -29270,7 +29295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -29861,7 +29886,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f6ef7f34376bee244a24120c41c2aae6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d1b8614794f5207448f923bcf97c8ece, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -15,6 +15,8 @@ public class PlayerPieces: MonoBehaviour
     public maze maze;
     public bool finishedwall = false;
 
+    //highlight
+    public GameObject spotlight;
     //treasure
     public int playernmb = 0;
     public List<GameObject> treasures;
@@ -60,9 +62,11 @@ public class PlayerPieces: MonoBehaviour
             if (isTurn)
             {
                 treasures[0].GetComponent<TreasureCard>().TreasureCardObj.SetActive(true);
+                spotlight.SetActive(true);
             } else
             {
                 treasures[0].GetComponent<TreasureCard>().TreasureCardObj.SetActive(false);
+                spotlight.SetActive(false);
             }
         }
         if (maze.GetComponent<RandoMazeBoard>().playerNum != playernmb)
@@ -91,7 +95,7 @@ public class PlayerPieces: MonoBehaviour
                     isTurn = false;     //set isTurn false again
                     turnClass.isTurn = isTurn;      //turnClass.isTurn = false
                     turnClass.wasTurnPrev = true;   //set the Players wasTurnPrev to true
-
+                    GameObject.FindObjectOfType<maze>().buttonsDisabled = false;
                     endPlayerTurn.buttonPressed = false;    //change EndTurn Button was pressed to false again
 
                     move.moving = false;

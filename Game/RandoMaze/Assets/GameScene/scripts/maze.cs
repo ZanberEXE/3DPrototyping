@@ -53,8 +53,10 @@ public class maze : MonoBehaviour
     private float range;
     //for treasures
     private GameObject mazeSystem;
-    public AudioSource rotationpattern;
     public List<Vector3> playerTreasurePos;
+    //SFX
+    public AudioSource rotationpattern;
+    private bool play = false;
 
     #region for options
     //is the pattern activated
@@ -158,7 +160,6 @@ public class maze : MonoBehaviour
 
     private void rotatePatternAnim()
     {
-        PlaySFX();
         rotFor = rotSpeed * Time.deltaTime;
         if (rotLeft > rotFor)
         {
@@ -485,14 +486,14 @@ public class maze : MonoBehaviour
         }
         else
         {
-            buttonsDisabled = false;
+            
             rotating = false;
         }
         if (moving)
         {
             buttonsDisabled = true;
         }
-        else if(!rotating)
+        else if(!rotating&&!finished)
         {
             buttonsDisabled = false;
         }
@@ -514,14 +515,25 @@ public class maze : MonoBehaviour
         }
         if (pattern&&patternactivated)
         {
+            if (play == true)
+            {
+                PlaySFX();
+            }
+            else
+            {
+                play = true;
+            }
             rotatePattern();
             pattern = false;
+
         }
         if (!finished)
         {
+            
             if (rotate)
             {
                 rotateInputWall();
+                PlaySFX();
             }
             if (startMove)
             {
