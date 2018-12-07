@@ -91,7 +91,7 @@ public class PlayerPieces: MonoBehaviour
                     isTurn = false;     //set isTurn false again
                     turnClass.isTurn = isTurn;      //turnClass.isTurn = false
                     turnClass.wasTurnPrev = true;   //set the Players wasTurnPrev to true
-
+                    GameObject.FindObjectOfType<maze>().buttonsDisabled = false;
                     endPlayerTurn.buttonPressed = false;    //change EndTurn Button was pressed to false again
 
                     move.moving = false;

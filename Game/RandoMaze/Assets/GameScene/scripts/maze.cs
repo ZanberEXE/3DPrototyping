@@ -486,14 +486,14 @@ public class maze : MonoBehaviour
         }
         else
         {
-            buttonsDisabled = false;
+            
             rotating = false;
         }
         if (moving)
         {
             buttonsDisabled = true;
         }
-        else if(!rotating)
+        else if(!rotating&&!finished)
         {
             buttonsDisabled = false;
         }
@@ -529,6 +529,7 @@ public class maze : MonoBehaviour
         }
         if (!finished)
         {
+            
             if (rotate)
             {
                 rotateInputWall();
