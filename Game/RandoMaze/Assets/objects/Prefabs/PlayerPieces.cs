@@ -9,7 +9,7 @@ public class PlayerPieces: MonoBehaviour
     public RandoMazeBoard boardTurnSystem;
     public TurnClass turnClass;
     public EndTurn endPlayerTurn;
-
+    public CapsuleCollider playerColl;
     public bool reachedGoal = false;
     //wallmovement system
     public maze maze;
@@ -36,6 +36,7 @@ public class PlayerPieces: MonoBehaviour
     }
     private void Start()
     {
+        playerColl = this.GetComponent<CapsuleCollider>();
         boardTurnSystem = GameObject.Find("Maze").GetComponent<RandoMazeBoard>();
         maze = GameObject.Find("Maze").GetComponent<maze>();
         move = GetComponent<keyMove2>();
@@ -76,6 +77,14 @@ public class PlayerPieces: MonoBehaviour
         if (hasTreasures)
         {
             checkGoal();
+        }
+        if (this.GetComponentInParent<CollectTreasures>().walkingIntoTreasure)
+        {
+            playerColl.enabled = false;
+        }
+        else
+        {
+            playerColl.enabled = true;
         }
         //if walls moved
         if (finishedwall)
