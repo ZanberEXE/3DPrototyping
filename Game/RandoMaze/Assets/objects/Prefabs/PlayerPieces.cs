@@ -78,14 +78,14 @@ public class PlayerPieces: MonoBehaviour
         {
             checkGoal();
         }
-        //if (this.GetComponentInParent<CollectTreasures>().walkingIntoTreasure)
-        //{
-        //    playerColl.enabled = false;
-        //}
-        //else
-        //{
-        //    playerColl.enabled = true;
-        //}
+        if (this.GetComponentInParent<CollectTreasures>().walkingIntoTreasure)
+        {
+            playerColl.enabled = false;
+        }
+        else
+        {
+            playerColl.enabled = true;
+        }
         //if walls moved
         if (finishedwall)
         {

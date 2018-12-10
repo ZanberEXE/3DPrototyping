@@ -22,6 +22,16 @@ public class CollectTreasures : MonoBehaviour
         if (walkingIntoTreasure)
         {
             distanceToMiddle = Vector2.Distance(new Vector2(this.GetComponentInParent<NavMeshAgent>().destination.x, this.GetComponentInParent<NavMeshAgent>().destination.z), new Vector2(transform.position.x, transform.position.z));
+            if ((distanceToMiddle * Mathf.Sign(distanceToMiddle)) > 0.2f)
+            {
+                GetComponentInParent<navMashMove>().targetPos = this.GetComponentInParent<NavMeshAgent>().destination;
+                GetComponentInParent<navMashMove>().Move();
+            }
+            else
+            {
+                walkingIntoTreasure = false;
+
+            }
         }
     }
 
@@ -46,7 +56,7 @@ public class CollectTreasures : MonoBehaviour
                     {
                         if ((distanceToMiddle*Mathf.Sign(distanceToMiddle)) > 0.2f)
                         {
-                            //GetComponentInParent<navMashMove>().targetPos = other.GetComponent<BoxCollider>().bounds.center;
+                            GetComponentInParent<navMashMove>().targetPos = other.GetComponent<BoxCollider>().bounds.center;
                             GetComponentInParent<navMashMove>().Move();
                         }
                         else
