@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class CollectTreasures : MonoBehaviour
 {
@@ -18,8 +19,11 @@ public class CollectTreasures : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-		
-	}
+        if (walkingIntoTreasure)
+        {
+            distanceToMiddle = Vector2.Distance(new Vector2(this.GetComponentInParent<NavMeshAgent>().destination.x, this.GetComponentInParent<NavMeshAgent>().destination.z), new Vector2(transform.position.x, transform.position.z));
+        }
+    }
 
     private void OnTriggerStay(Collider other)
     {
@@ -42,7 +46,7 @@ public class CollectTreasures : MonoBehaviour
                     {
                         if ((distanceToMiddle*Mathf.Sign(distanceToMiddle)) > 0.2f)
                         {
-                            GetComponentInParent<navMashMove>().targetPos = other.GetComponent<BoxCollider>().bounds.center;
+                            //GetComponentInParent<navMashMove>().targetPos = other.GetComponent<BoxCollider>().bounds.center;
                             GetComponentInParent<navMashMove>().Move();
                         }
                         else
