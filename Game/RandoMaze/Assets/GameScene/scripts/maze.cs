@@ -468,7 +468,14 @@ public class maze : MonoBehaviour
                 if (mazeSystem.GetComponent<RandoMazeBoard>().playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().treasures[0] != mazeSystem.GetComponent<RandoMazeBoard>().playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().goal)
                 {
                     int intern = i + 1;
-                    mazeSystem.GetComponent<RandoMazeBoard>().UiPlayer.transform.Find(Convert.ToString("Spieler " + intern + " Bild")).transform.Find(Convert.ToString("Spieler " + intern)).GetComponent<Text>().text = Convert.ToString(mazeSystem.GetComponent<RandoMazeBoard>().treasuresForPlayer - mazeSystem.GetComponent<RandoMazeBoard>().playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().treasures.Count + "/" + mazeSystem.GetComponent<RandoMazeBoard>().treasuresForPlayer);
+                    if (this.GetComponentInParent<RandoMazeBoard>().playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().treasures[0] != this.GetComponentInParent<RandoMazeBoard>().playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().goal)
+                    {
+                        mazeSystem.GetComponent<RandoMazeBoard>().UiPlayer.transform.Find(Convert.ToString("Spieler " + intern + " Bild")).transform.Find(Convert.ToString("Spieler " + intern)).GetComponent<Text>().text = Convert.ToString(mazeSystem.GetComponent<RandoMazeBoard>().treasuresForPlayer - mazeSystem.GetComponent<RandoMazeBoard>().playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().treasures.Count + "/" + mazeSystem.GetComponent<RandoMazeBoard>().treasuresForPlayer);
+                    }
+                    else
+                    {
+                        mazeSystem.GetComponent<RandoMazeBoard>().UiPlayer.transform.Find(Convert.ToString("Spieler " + intern + " Bild")).transform.Find(Convert.ToString("Spieler " + intern)).GetComponent<Text>().text = "6/6";
+                    }
                 }
             }
         }

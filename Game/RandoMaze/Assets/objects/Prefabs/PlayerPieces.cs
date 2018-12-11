@@ -58,7 +58,7 @@ public class PlayerPieces: MonoBehaviour
         //set value of isTurn equal to value that current Player holds
         isTurn = turnClass.isTurn;
         finishedwall = maze.finished;
-        if (treasures.Count != 0 && treasures[0] != goal)
+        if (treasures.Count != 0 /*&& treasures[0] != goal*/)
         {
             if (isTurn)
             {
