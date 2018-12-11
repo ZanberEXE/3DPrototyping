@@ -1965,7 +1965,7 @@ Prefab:
         type: 3}
     - target: {fileID: 1223806015371296, guid: 6868e49dbe696ad409d680f002dbbf86, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1804723683689416, guid: 6868e49dbe696ad409d680f002dbbf86, type: 2}
       propertyPath: m_IsActive
