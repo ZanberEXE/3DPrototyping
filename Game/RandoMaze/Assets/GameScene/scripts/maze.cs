@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+using System.Linq;
 public class maze : MonoBehaviour
 {
 
@@ -240,21 +240,33 @@ public class maze : MonoBehaviour
         {
             if (plusOrMinus=="+")
             {
-                button = GameObject.Find(Convert.ToString("R" + number));
+                if (button != buttons.Where(obj => obj.name == Convert.ToString("R" + number)).Single())
+                {
+                    button = buttons.Where(obj => obj.name == Convert.ToString("R" + number)).Single();
+                }
             }
             else if(plusOrMinus=="-")
             {
-                button = GameObject.Find(Convert.ToString("L" + number));
+                if (button != buttons.Where(obj => obj.name == Convert.ToString("L" + number)).Single())
+                {
+                    button = buttons.Where(obj => obj.name == Convert.ToString("L" + number)).Single();
+                }
             }
         }else if (orientation == "y")
         {
             if (plusOrMinus == "+")
             {
-                button = GameObject.Find(Convert.ToString("U" + number));
+                if (button != buttons.Where(obj => obj.name == Convert.ToString("U" + number)).Single())
+                {
+                    button = buttons.Where(obj => obj.name == Convert.ToString("U" + number)).Single();
+                }
             }
             else if (plusOrMinus == "-")
             {
-                button = GameObject.Find(Convert.ToString("O" + number));
+                if (button != buttons.Where(obj => obj.name == Convert.ToString("O" + number)).Single())
+                {
+                    button = buttons.Where(obj => obj.name == Convert.ToString("O" + number)).Single();
+                }
             }
         }
     }

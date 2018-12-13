@@ -7271,11 +7271,11 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 803079845}
+      objectReference: {fileID: 921467486}
     - target: {fileID: 114713874007526590, guid: fb2430b069d42eb4c80569ebaf57de59,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetActive
+      value: pressMove
       objectReference: {fileID: 0}
     - target: {fileID: 114713874007526590, guid: fb2430b069d42eb4c80569ebaf57de59,
         type: 2}
@@ -7289,7 +7289,7 @@ Prefab:
     - target: {fileID: 114713874007526590, guid: fb2430b069d42eb4c80569ebaf57de59,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114713874007526590, guid: fb2430b069d42eb4c80569ebaf57de59,
         type: 2}
