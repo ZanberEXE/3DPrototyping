@@ -299,19 +299,24 @@ public class maze : MonoBehaviour
                     //targetWalls.Add(new Vector3());
                 }
             }
-            for (int i = 0; i < list.Count; i++)
+            foreach (GameObject gameObject in GameObject.FindGameObjectsWithTag("Player"))
             {
-                if (plusOrMinus == "+")
+                if (gameObject.transform.position.z > (zRows - 1.5) && gameObject.transform.position.z < (zRows + 1.5))
                 {
-                    moveValue = 1;
+                    list.Add(gameObject);
                 }
-                else if(plusOrMinus=="-")
-                {
-                    moveValue = -1;
-                }
-                movement = posSteps * new Vector3(moveValue, 0, 0);
-                moveleft = movement;
             }
+
+            if (plusOrMinus == "+")
+            {
+                moveValue = 1;
+            }
+            else if(plusOrMinus=="-")
+            {
+                moveValue = -1;
+            }
+            movement = posSteps * new Vector3(moveValue, 0, 0);
+            moveleft = movement;
         }
         else if(orientation=="y")
         {
@@ -323,19 +328,23 @@ public class maze : MonoBehaviour
                     //targetWalls.Add(new Vector3());
                 }
             }
-            for (int i = 0; i < list.Count; i++)
+            foreach (GameObject gameObject in GameObject.FindGameObjectsWithTag("Player"))
             {
-                if (plusOrMinus == "+")
+                if (gameObject.transform.position.x > (-zRows - 1.5) && gameObject.transform.position.x < (-zRows + 1.5))
                 {
-                    moveValue = -1;
+                    list.Add(gameObject);
                 }
-                else if (plusOrMinus == "-")
-                {
-                    moveValue = 1;
-                }
-                movement = posSteps * new Vector3(0, 0, moveValue);
-                moveleft = movement;
             }
+            if (plusOrMinus == "+")
+            {
+                moveValue = -1;
+            }
+            else if (plusOrMinus == "-")
+            {
+                moveValue = 1;
+            }
+            movement = posSteps * new Vector3(0, 0, moveValue);
+            moveleft = movement;
         }
         moving = true;
         lastbutton();
@@ -353,14 +362,30 @@ public class maze : MonoBehaviour
         {
             for (int i = 0; i < walls.Count; i++)
             {
-                walls[i].transform.position += moveto;
+                if (walls[i].tag != "Player")
+                {
+                    walls[i].transform.position += moveto;
+                }
+                else
+                {
+                    walls[i].GetComponent<NavMeshAgent>().isStopped = true;
+                    walls[i].GetComponent<NavMeshAgent>().Warp(walls[i].transform.position + moveto);
+                }
             }
         }
         else
         {
             for(int i = 0; i < walls.Count; i++)
             {
-                walls[i].transform.position += (moveleft -= movement * speed * Time.deltaTime);
+                if (walls[i].tag != "Player")
+                {
+                    walls[i].transform.position += (moveleft -= movement * speed * Time.deltaTime);
+                }
+                else
+                {
+                    walls[i].GetComponent<NavMeshAgent>().Warp(walls[i].transform.position + (moveleft -= movement * speed * Time.deltaTime));
+                    walls[i].GetComponent<NavMeshAgent>().isStopped = false;
+                }
                 moveleft = Vector3.zero;
             }
             finishMove(walls);
@@ -373,7 +398,10 @@ public class maze : MonoBehaviour
     {
         for (int i = 0; i < walls.Count; i++)
         {
-            walls[i].transform.position = new Vector3(Mathf.Round(walls[i].transform.position.x), 0, (Mathf.Round(walls[i].transform.position.z)));
+            if (walls[i].tag != "Player")
+            {
+                walls[i].transform.position = new Vector3(Mathf.Round(walls[i].transform.position.x), 0, (Mathf.Round(walls[i].transform.position.z)));
+            }
         }
         list.Find(x => x.tag.Equals("InputWall")).tag = "Wall";
         if (orientation == "x")
