@@ -9,8 +9,8 @@ public class playerTeleport : MonoBehaviour {
     {
         if (other.tag=="Player")
         {
-            //Debug.Log(other.transform.position);
-            //other.GetComponent<Rigidbody>().Sleep();
+            Debug.Log(other.transform.position);
+            other.GetComponent<Rigidbody>().Sleep();
             if (direction == "x")
             {
                 other.GetComponent<NavMeshAgent>().Warp(new Vector3(9 * multiplier, other.transform.position.y, other.transform.position.z));
@@ -18,9 +18,9 @@ public class playerTeleport : MonoBehaviour {
             {
                 other.GetComponent<NavMeshAgent>().Warp(new Vector3(other.transform.position.x, other.transform.position.y, 9 * multiplier));
             }
-            //other.GetComponent<Rigidbody>().WakeUp();
-            //Debug.Log("Teleport");
-            //Debug.Log(other.transform.position);
+            other.GetComponent<Rigidbody>().WakeUp();
+            Debug.Log("Teleport");
+            Debug.Log(other.transform.position);
         }
     }
 }

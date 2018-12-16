@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
 public class PlayerPieces: MonoBehaviour
 {
@@ -23,7 +22,7 @@ public class PlayerPieces: MonoBehaviour
     public List<GameObject> treasures;
     public GameObject goal;
     public bool hasTreasures = false;
-    NavMeshAgent agent;
+
     keyMove2 move;
     navMashMove NVM;
     public bool isTurn = false;     //bool to check if itz the Player's turn
@@ -37,7 +36,6 @@ public class PlayerPieces: MonoBehaviour
     }
     private void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
         playerColl = this.GetComponent<CapsuleCollider>();
         boardTurnSystem = GameObject.Find("Maze").GetComponent<RandoMazeBoard>();
         maze = GameObject.Find("Maze").GetComponent<maze>();
@@ -94,18 +92,13 @@ public class PlayerPieces: MonoBehaviour
             //if isTurn = true
             if(isTurn)
             {
-                //this.GetComponentInParent<navMashMove>().targetPos = this.transform.position;
-                Debug.Log(agent.destination);
-                this.GetComponentInParent<NavMeshAgent>().isStopped = false;
+                
                 move.moving = true;
                 NVM.moving2 = true;
 
                 //check if Button was pressed
                 if (endPlayerTurn.buttonPressed == true)
                 {
-                    Debug.Log(this.GetComponentInParent<Rigidbody>().collisionDetectionMode);
-                    //this.GetComponentInParent<Rigidbody>().collisionDetectionMode
-                    this.GetComponentInParent<NavMeshAgent>().isStopped = true;
                     move.moving = false;
                     NVM.moving2 = false;
                     isTurn = false;     //set isTurn false again

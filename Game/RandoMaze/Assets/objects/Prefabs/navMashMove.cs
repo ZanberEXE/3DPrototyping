@@ -10,10 +10,7 @@ public class navMashMove : MonoBehaviour
     UnityEngine.AI.NavMeshAgent agent;
     private Vector3 clickPos;
     public Vector3 targetPos;
-    public bool waiting = false;
-    public float delay = 0.2f;
     public bool moving2 = false;
-    Ray ray;
 	// Use this for initialization
 	void Start ()
     {
@@ -23,59 +20,27 @@ public class navMashMove : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        
         //MousePosCheck();
-        if (waiting)
-        {
-            startTimer();
-        }
-        else
-        {
-            if (Input.GetMouseButton(0) && moving2)
-            {
-                ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                Plane plane = new Plane(Vector3.up, transform.position);
-                float point = 0f;
-                if (plane.Raycast(ray, out point))
-                {
-                    targetPos = ray.GetPoint(point);
-                }
-                startTimer();
 
+        if (Input.GetMouseButton(0)&&moving2)
+        {
+            Plane plane = new Plane(Vector3.up, transform.position);
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            float point = 0f;
 
-            }
-            else if (!moving2 && agent.isActiveAndEnabled)
+            if (plane.Raycast(ray, out point))
             {
-                agent.isStopped = true;
-                agent.ResetPath();
+                targetPos = ray.GetPoint(point);
             }
+            Move();
+        }else if (!moving2&&agent.isActiveAndEnabled)
+        {
+            agent.SetDestination(GetComponentInParent<Transform>().position);
+            targetPos = GetComponentInParent<Transform>().transform.position;
         }
         
 	}
 
-    public void startTimer()
-    {
-        if (!waiting)
-        {
-            waiting = true;
-
-        }
-        else
-        {
-            if (delay > Time.deltaTime)
-                delay -= Time.deltaTime;
-            else
-            {
-                delay=0.2f;
-                waiting = false;
-                startMoving();
-            }
-        }
-    }
-    public void startMoving()
-    {
-        Move();
-    }
     public void Move()
     {
         agent.SetDestination(targetPos);
