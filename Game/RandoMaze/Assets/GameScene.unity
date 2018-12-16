@@ -6722,6 +6722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: z
   multiplier: -1
+  mazeObject: {fileID: 921467485}
 --- !u!65 &406823911
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10559,6 +10560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: z
   multiplier: 1
+  mazeObject: {fileID: 921467485}
 --- !u!65 &703228492
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19423,6 +19425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: x
   multiplier: -1
+  mazeObject: {fileID: 921467485}
 --- !u!65 &1464913447
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26769,6 +26772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: x
   multiplier: 1
+  mazeObject: {fileID: 921467485}
 --- !u!65 &2087072251
 BoxCollider:
   m_ObjectHideFlags: 0
