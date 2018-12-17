@@ -512,7 +512,7 @@ public class maze : MonoBehaviour
                 }
                 else
                 {
-                    mazeSystem.GetComponent<RandoMazeBoard>().UiPlayer.transform.Find(Convert.ToString("Spieler " + intern + " Bild")).transform.Find(Convert.ToString("Spieler " + intern)).GetComponent<Text>().text = "6/6";
+                    mazeSystem.GetComponent<RandoMazeBoard>().UiPlayer.transform.Find(Convert.ToString("Spieler " + intern + " Bild")).transform.Find(Convert.ToString("Spieler " + intern)).GetComponent<Text>().text = Convert.ToString(mazeSystem.GetComponent<RandoMazeBoard>().treasuresForPlayer + "/" + mazeSystem.GetComponent<RandoMazeBoard>().treasuresForPlayer);
                 }
             }
         }
