@@ -495,7 +495,10 @@ public class maze : MonoBehaviour
             {
                 foreach (GameObject UIElement in GameObject.FindGameObjectsWithTag("UI"))
                 {
-                    UIElement.SetActive(false);
+                    if (UIElement.name != "UIWinscreen")
+                    {
+                        UIElement.SetActive(false);
+                    }
                 }
                 winnscreen.transform.Find("Panel").transform.Find("Text").GetComponent<Text>().text = Convert.ToString(GetComponentInParent<RandoMazeBoard>().playersGroup[i].playerGameObject.GetComponent<PlayerPieces>().name+winner);
                 winnscreen.SetActive(true);
