@@ -4817,6 +4817,11 @@ Prefab:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 195139008452611682, guid: fa58ce0d1c3d8d14ea21303a4fc7f431,
+        type: 2}
+      propertyPath: m_ObstacleAvoidanceType
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54046692982484912, guid: fa58ce0d1c3d8d14ea21303a4fc7f431, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: fa58ce0d1c3d8d14ea21303a4fc7f431, type: 2}
@@ -10091,6 +10096,11 @@ Prefab:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 195468087754119600, guid: c8757e2975a0cc94d8696755479bdf0d,
+        type: 2}
+      propertyPath: m_ObstacleAvoidanceType
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54283387470002028, guid: c8757e2975a0cc94d8696755479bdf0d, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: c8757e2975a0cc94d8696755479bdf0d, type: 2}
@@ -12130,6 +12140,11 @@ Prefab:
     - target: {fileID: 1320622100974764, guid: 7de47a87064bb22439e7aebc6068f94c, type: 2}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 195546155583861370, guid: 7de47a87064bb22439e7aebc6068f94c,
+        type: 2}
+      propertyPath: m_ObstacleAvoidanceType
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54547809461911692, guid: 7de47a87064bb22439e7aebc6068f94c, type: 2}
@@ -18260,6 +18275,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4609285487987138, guid: c86c793f4f553c54cbea009ce41f3947, type: 2}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109549194729152, guid: c86c793f4f553c54cbea009ce41f3947, type: 2}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -25530,6 +25549,11 @@ Prefab:
     - target: {fileID: 1518927955286130, guid: 182b3f92e9db8f94f9dbf1f4c8bc13b7, type: 2}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 195768130299053182, guid: 182b3f92e9db8f94f9dbf1f4c8bc13b7,
+        type: 2}
+      propertyPath: m_ObstacleAvoidanceType
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54372848596507054, guid: 182b3f92e9db8f94f9dbf1f4c8bc13b7, type: 2}
