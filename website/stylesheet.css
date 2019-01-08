@@ -1,39 +1,52 @@
 ﻿body 
 {
-
+    background-image: url("wood.jpg");
 }
 
 #navbar
 {
-    line-height: 60px;
-    background-color: cadetblue;
+    line-height: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-#logo
+#head 
 {
     line-height: 60px;
+    color: #00ff00;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 4px 4px 8px #000000;
 }
 
 #block1
 {
-    margin-top: -22px;
-    margin-bottom: -22px;
-   background-color: bisque;
+    margin-top: 6px;
+    border: 3px solid white;
+}
+
+ul
+{
+    text-align: center;
 }
 
 li
 {
+    
+    margin: 15px;
+    padding: 0;
+    display: inline;
     text-align: center;
     list-style: none;
     font-size: 30px;
-    line-height: 60px;
+    line-height: 50px;
+    color: #ff8000;
     text-shadow: 4px 4px 8px #808080;
 }
 
 li > a 
 {
     text-decoration: none;
-    color: #ff1a1a;
+    color: #ff8000;
 }
 
 li > a:hover 
@@ -43,13 +56,14 @@ li > a:hover
 
 li > a:active 
 {
-    color: #930202;
+    color: #ff9f3e;
 }
 
 footer 
 {
+    margin-top: 15px;
     padding-left: 10px;
-    background-color: cadetblue;
+    background-color: #005b7e;
     line-height: 60px;
 }
 
@@ -61,4 +75,12 @@ h1
 h2 
 {
     padding-left: 10px;
+}
+
+#logo
+{
+    position: absolute;
+    width: 75px;
+    height: 60px;
+    right: 20px;
 }
