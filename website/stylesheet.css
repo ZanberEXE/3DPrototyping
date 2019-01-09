@@ -1,27 +1,45 @@
 ﻿body 
 {
-    background-image: url("wood.jpg");
+    background-color: #005b7e;
 }
 
 #navbar
 {
-    line-height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -8px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 #head 
+{    
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -8px;
+}
+
+.gametitle 
 {
-    line-height: 60px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
     color: #00ff00;
     font-size: 50px;
     text-align: center;
     text-shadow: 4px 4px 8px #000000;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#banner 
+{
+    width: 100%;
+    height: 150px;
 }
 
 #block1
 {
     margin-top: 6px;
-    border: 3px solid white;
+    color: #fff5b9;
 }
 
 ul
@@ -32,6 +50,20 @@ ul
 li
 {
     
+}
+
+#roles 
+{
+    list-style: circle;
+    text-align: left;
+    text-shadow: none;
+    font-size: 14pt;
+    color: #95f4fb;
+    margin-left: -20px;
+}
+
+.bar 
+{
     margin: 15px;
     padding: 0;
     display: inline;
@@ -61,26 +93,53 @@ li > a:active
 
 footer 
 {
-    margin-top: 15px;
-    padding-left: 10px;
-    background-color: #005b7e;
-    line-height: 60px;
+    position: fixed;
+    bottom: 4px;
+    padding-left: 4px;
+    color: white;
 }
 
 h1 
 {
-    padding-left: 10px;
+    text-align: center;
+    color: #ffc635;
 }
 
-h2 
+h2
 {
-    padding-left: 10px;
+    text-align: center;
+    color: white;
+}
+
+h3 
+{
+    font-size: 15pt;
+    text-decoration: underline;
+    text-align: left;
+    color: #00eeff;
 }
 
 #logo
 {
-    position: absolute;
+    position: fixed;
     width: 75px;
     height: 60px;
-    right: 20px;
+    right: 10px;
+    bottom: 3px;
+}
+
+#box1
+{
+    text-align: center;
+    font-size: 16pt;
+}
+
+#box2 
+{
+    color: #95f4fb;
+}
+
+#box3
+{
+    font-size: 16pt;
 }
